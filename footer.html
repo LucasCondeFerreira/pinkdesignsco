@@ -1,0 +1,68 @@
+<style>
+  .Div-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(248, 80, 113) !important;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    max-width: 1160px;
+    min-height: 220px;
+  }
+
+  @media (min-width: 768px) {
+    .Ul-footer {
+      background-color: rgb(248, 80, 113) !important;
+      margin: auto 0;
+      padding: 0 25px;
+      justify-content: space-around;
+      gap: 28px;
+    }
+    .Div-footer > div {
+      height: 220px;
+    }
+    .Ul-footer > li {
+      list-style: none;
+      text-align: end;
+    }
+
+    .A-footer {
+      display: inline-block;
+      text-decoration: none;
+      background-color: rgb(248, 80, 113) !important;
+      color: #fff !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .A-footer > h4 {
+      font-family: "Karla";
+    }
+  }
+  @media (min-width: 1px) and (max-width: 767px) {
+    .Ul-footer {
+      display: none;
+    }
+    .Div-footer {
+      min-height: 100px;
+    }
+  }
+</style>
+<div class="pink">
+  <nav class="Div-footer">
+    <ul class="Ul-footer">
+      <li class="list">
+        <a class="A-footer" href="#"><h4 class="">Instagram</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">Twitter</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">E-mail</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">Tik tok</h4></a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,190 @@
+<style>
+  div.button-rotate {
+    position: relative;
+    min-height: 600px;
+  }
+
+  a.button-rotate {
+    display: block;
+    width: 415px;
+    height: 100px;
+    margin: 3rem auto;
+    position: absolute;
+    top: 13rem;
+    left: calc(0px - 4vw);
+
+    border: 1px rgb(248, 80, 113) solid;
+    border-radius: 50px;
+
+    transform: rotate(-90deg);
+    background: transparent;
+  }
+  div.pacote > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  div.pacote > div {
+    position: relative;
+  }
+  /*
+  div.pacote:nth-child(1) {
+    background-image: url(./assets/images/IMG-2000.JPEG);
+  }
+  div.pacote:nth-child(2) {
+    background-image: url(./assets/images/midia-social-pacote.JPEG);
+  }
+  div.pacote:nth-child(3) {
+    background-image: url(./assets/images/IMG-1000.JPEG);
+  }*/
+
+  @media (max-width: 1023px) {
+    div.button-rotate {
+      display: none;
+    }
+    div.pacote {
+      width: 260px;
+      height: 330px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    div.pacote {
+      padding: 0;
+      width: calc(260px + 3.5vw);
+      height: calc(310px + 2vw);
+    }
+  }
+
+  a.button-rotate:hover {
+    background-color: #f1d9ef;
+  }
+
+  a.button-rotate > h2 {
+    width: 100%;
+    margin-top: 1.2rem;
+
+    font-size: 2.8rem;
+    color: rgb(248, 80, 113);
+    text-align: center;
+    align-items: center;
+  }
+
+  div.row-pacote {
+    padding: 0 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1150px) {
+    div.row-pacote {
+      min-height: 760px;
+    }
+    div.pacote {
+      top: 5%;
+    }
+  }
+
+  div.pacote {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+  }
+  div.darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+  div.darken:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  div.pacote > button.button-info {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: rgb(248, 80, 113);
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Albra";
+
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+  }
+
+  @media (min-width: 1150px) {
+    div.row-pacote {
+      min-height: 600px;
+    }
+    div.pacote {
+      top: 20%;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.row-pacote {
+      width: 100%;
+      min-height: 600px;
+      margin-left: 12px;
+    }
+    div.pacote {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 240px;
+      height: 260px;
+
+      top: 0;
+      margin: 1rem 2rem;
+    }
+
+    div.pacote > button.button-info {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="col-md-2 button-rotate">
+    <a class="btn button-rotate" href="#">
+      <h2>Compre Agora</h2>
+    </a>
+  </div>
+  <div class="row col-md-10 row-pacote">
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/IMG-2000.JPEG" alt="" />
+      </div>
+      <button type="submit" class="btn button-info">Informações</button>
+    </div>
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/midia-social-pacote.JPEG" alt="" />
+      </div>
+      <button type="submit" class="btn button-info">Midias Sociais</button>
+    </div>
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/IMG-1000.JPEG" alt="" />
+      </div>
+      <button type="submit" class="btn button-info">Informações</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<style>
+  div.banner {
+    background-image: url(./assets/images/heaven.JPEG);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 420px;
+    width: 100%;
+    padding: 5rem 0;
+    margin: 2rem 0;
+  }
+  div.banner > span:nth-child(1) {
+    display: block;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 80, 113);
+  }
+
+  div.banner > span:nth-child(1) > h1 {
+    font-family: "Lemon Milk";
+    font-weight: 800;
+    color: #fff;
+  }
+
+  div.banner > span:nth-child(2) {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 1024px) {
+    div.banner {
+      min-height: 420px;
+    }
+    div.banner > span:nth-child(1) {
+      width: 30%;
+    }
+
+    div.banner > span:nth-child(2) {
+      width: 30%;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.banner {
+      min-height: 180px;
+      padding: 3rem 0;
+    }
+    div.banner > span:nth-child(1) {
+      width: 40%;
+      padding: 0.5rem;
+    }
+
+    div.banner > span:nth-child(1) > h1 {
+      font-size: 28px;
+    }
+
+    div.banner > span:nth-child(2) {
+      width: 40%;
+    }
+  }
+
+  div.banner > span:nth-child(2) > h1 {
+    font-size: 6rem;
+    color: rgb(248, 80, 113);
+  }
+</style>
+<div class="col-md-12 banner">
+  <span><h1>O QUE</h1></span>
+  <span><h1>fazemos?</h1></span>
+</div>
