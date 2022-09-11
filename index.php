@@ -32,7 +32,7 @@
   <body>
     <?php 
 
-    include('./header.html');
+    include('./surfaces/header.html');
     include('./index/foto.html');
     include('./index/marca.html');
     include('./index/mensagem.html');
@@ -41,8 +41,8 @@
     include('./index/leia.html');
     include('./index/pacotes.html');
     include('./index/banner.html');
-    include('./slide.html');
-    include('./footer.html');
+    include('./surfaces/slide.html');
+    include('./surfaces/footer.html');
 
 ?>
   </body>
