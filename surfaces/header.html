@@ -1,4 +1,27 @@
 <style>
+  @media (min-width: 1px) and (max-width: 767px) {
+    .DivHeader {
+      padding: 0 1rem;
+    }
+    .Ul {
+      background-color: #ff037a !important;
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1160px) {
+    .DivHeader {
+      max-width: 960px;
+      padding: 0 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .DivHeader {
+      padding: 0 1.5rem;
+    }
+  }
+
   div.pink {
     background-color: #ff037a !important;
     width: 100%;
@@ -8,9 +31,7 @@
     justify-content: space-between;
     background-color: #ff037a !important;
     margin: 0 auto;
-    padding: 0 1.5rem;
     overflow: hidden;
-    max-width: 1160px;
   }
 
   .Nav {
@@ -22,7 +43,7 @@
   .Ul {
     background-color: #ff037a !important;
     margin: 1rem 0;
-    padding: 0 25px;
+    padding: 0;
     justify-content: space-around;
     gap: 28px;
   }
@@ -43,7 +64,7 @@
   }
 
   img.A {
-    width: 90%;
+    width: 95%;
     object-fit: contain;
   }
 
