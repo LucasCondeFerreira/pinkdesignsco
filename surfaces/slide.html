@@ -82,145 +82,67 @@
 </style>
 
 <!-- Swiper -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>1</span>
-      </div>
-      <h3>Escolha</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
+<div class="swiper-wrapper">
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>1</span>
     </div>
-
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>2</span>
-      </div>
-      <h3>Compra</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
-    </div>
-
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>3</span>
-      </div>
-      <h3>Contrato</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
-    </div>
-
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>4</span>
-      </div>
-      <h3>Lorem</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
-    </div>
-
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>5</span>
-      </div>
-      <h3>Lorem</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
-    </div>
-
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>6</span>
-      </div>
-      <h3>Lorem</h3>
-      <p>
-        Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis
-        voluptas
-      </p>
-    </div>
+    <h3>Escolha</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
   </div>
 
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>2</span>
+    </div>
+    <h3>Compra</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>3</span>
+    </div>
+    <h3>Contrato</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>4</span>
+    </div>
+    <h3>Lorem</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>5</span>
+    </div>
+    <h3>Lorem</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>6</span>
+    </div>
+    <h3>Lorem</h3>
+    <p>
+      Lorem dolor sit amet consectetur adipisicing elit. Ducimus nobis voluptas
+    </p>
+  </div>
 </div>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-
-  if (width >= 1024) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  } else if (width >= 630 && width <= 1023) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  } else if (width >= 360 && width <= 629) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  } else if (width >= 1 && width <= 359) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 70,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  }
-</script>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
