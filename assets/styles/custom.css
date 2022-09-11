@@ -144,7 +144,7 @@ div.pacotes > div.title-pacotes {
 }
 div.pacotes > div.title-pacotes > h1.title-pacotes {
   display: block;
-  background-color: #ff2772;
+  background-color: #ff037a;
   width: 30%;
   min-height: 4rem;
   padding: 1rem;
@@ -176,7 +176,7 @@ section.pacotes > div > h5 {
 section.pacotes > div > h2 {
   text-transform: capitalize;
   font-size: 5rem;
-  color: #ff2772;
+  color: #ff037a;
 }
 
 section.pacotes > div > p {
@@ -239,7 +239,7 @@ div.midias > div.title-midias {
 }
 div.midias > div.title-midias > h1.title-midias {
   display: block;
-  background-color: #ff2772;
+  background-color: #ff037a;
   color: #fff;
   width: 30%;
   min-height: 4rem;
@@ -270,7 +270,7 @@ section.midias > div > h5 {
 section.midias > div > h2 {
   text-transform: capitalize;
   font-size: 5rem;
-  color: #ff2772;
+  color: #ff037a;
 }
 
 section.midias > div > p {
@@ -301,7 +301,7 @@ section.midias > div > div > ul > li > span:nth-child(1) {
 }
 
 section.midias > div > div > ul > li > span:nth-child(2) {
-  color: #ff2772;
+  color: #ff037a;
   font-size: 1.7rem;
 }
 
@@ -330,7 +330,7 @@ section.midias > div > div > a > span {
 }
 
 div.trabalhos {
-  background-color: #ff2772;
+  background-color: #ff037a;
   min-height: 12rem;
   padding: 5rem 5rem;
 }
