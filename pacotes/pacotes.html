@@ -1,156 +1,219 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  div.pacotes:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    <!-- Link static style sheet -->
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.pacotes:nth-child(2) {
+      padding: 1.2rem;
+      padding-top: 5rem;
+    }
 
-    <!-- Link custom style sheet -->
-    <link rel="stylesheet" href="../assets/styles/custom.css" />
+    div.pacotes > h3.text-pacotes {
+      display: inline-block;
+      text-align: start;
+      font-size: 1.1rem !important;
+      font-family: "Karla";
+      color: #000;
+    }
 
-    <!-- Font Awesome script -->
+    div.pacotes > div.title-pacotes > h1.title-pacotes {
+      width: 50%;
+    }
 
-    <script
-      src="https://kit.fontawesome.com/9efff873bb.js"
-      crossorigin="anonymous"
-    ></script>
+    section.pacotes > div {
+      padding: 2rem 2rem 5rem 2rem;
+      margin: 2rem 0;
+      width: 85%;
+      border: #000 solid 4px;
+    }
 
-    <title>Codingwebart</title>
-  </head>
-  <body>
-    <div class="col-12 pacotes">
-      <p class="text-pacotes">
-        Com duas estéticas únicas para escolher, atendemos aos diferentes
-        estilos de designs. Temos elegante e sofisticado para um visual
-        atemporal e limpo, ou brilhante e ousado para algo um pouco mais ousado
-        e impactante!
+    section.pacotes > div > h2 {
+      font-size: 3rem !important;
+    }
+
+    section.pacotes > div > div > ul > li {
+      color: #000;
+      font-size: 1rem;
+    }
+
+    section.pacotes > div > div > a {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      border: solid 2px #000;
+      margin: 0 auto;
+      margin-top: 1.8rem;
+      padding: 0.9rem 2rem;
+    }
+
+    section.pacotes > div > div > a > span {
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 2.28rem;
+      font-family: "Albra";
+      color: #ff037a;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    div.pacotes:nth-child(2) {
+      padding: 2rem;
+      padding-top: 5rem;
+    }
+
+    div.pacotes > h3.text-pacotes {
+      display: inline-block;
+      text-align: center;
+      font-family: "Karla";
+      color: #000;
+      width: 60%;
+    }
+
+    div.pacotes > div.title-pacotes > h1.title-pacotes {
+      width: 30%;
+    }
+
+    section.pacotes > div {
+      padding: 3rem 5rem 6rem 5rem;
+      margin: 2rem 25px;
+      border: #000 solid 4px;
+    }
+
+    section.pacotes > div > h2 {
+      font-size: 5rem;
+    }
+
+    section.pacotes > div > div > ul > li {
+      color: #000;
+      font-size: 1.3rem;
+    }
+
+    section.pacotes > div > div > a {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      border: solid 2px #000;
+      margin: 0 auto;
+      margin-top: 1.8rem;
+      padding: 0.9rem 2rem;
+    }
+
+    section.pacotes > div > div > a > span {
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-family: "Albra";
+      color: #ff037a;
+    }
+  }
+
+  div.pacotes > div.title-pacotes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 50%);
+  }
+  div.pacotes > div.title-pacotes > h1.title-pacotes {
+    display: block;
+    background-color: #ff037a;
+    font-family: "Lemon Milk";
+    font-weight: 600;
+    min-height: 4rem;
+    padding: 1rem;
+  }
+
+  section.pacotes {
+    background-color: #f2ede7;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.pacotes > div > h5 {
+    font-family: "Lemon Milk";
+    font-weight: 600;
+    color: #000;
+  }
+
+  section.pacotes > div > h2 {
+    text-transform: capitalize;
+    color: #ff037a;
+  }
+
+  section.pacotes > div > p {
+  }
+
+  section.pacotes > div > div > p {
+    margin: 1.5rem 0;
+    color: #000;
+  }
+</style>
+<div class="col-12 pacotes">
+  <h3 class="text-pacotes">
+    Com duas estéticas únicas para escolher, atendemos aos diferentes estilos de
+    designs. <br />
+    Temos <span class="pink">elegante e sofisticado</span> para um visual
+    atemporal e limpo, ou <span class="pink">brilhante e ousado</span> para algo
+    um pouco mais ousado e impactante!
+  </h3>
+</div>
+<div class="col-12 pacotes">
+  <div class="title-pacotes">
+    <h1 class="title-pacotes">Pacotes</h1>
+  </div>
+</div>
+<section class="col-12 pacotes">
+  <div class="col-md-6">
+    <h5>lorem ipsum</h5>
+    <h2>lorem ipsum</h2>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam
+        totam incidunt hic. Quod, sint laborum. Voluptatum facilis quam dolore
+        cum iste, ducimus necessitatibus officia, rerum odio quasi incidunt
+        magni.
       </p>
+      <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+      </ul>
+      <a href="#" class="btn"><span>R$ 497,00</span></a>
     </div>
-    <div class="col-12 pacotes">
-      <div class="title-pacotes">
-        <h1 class="title-pacotes">Pacotes</h1>
-      </div>
+  </div>
+
+  <div class="col-md-6">
+    <h5>lorem ipsum</h5>
+    <h2>lorem ipsum</h2>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam
+        totam incidunt hic. Quod, sint laborum. Voluptatum facilis quam dolore
+        cum iste, ducimus necessitatibus officia, rerum odio quasi incidunt
+        magni.
+      </p>
+      <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+      </ul>
+      <a href="#" class="btn"><span>R$ 849,00</span></a>
     </div>
-    <section class="col-12 pacotes">
-      <div>
-        <h5>lorem ipsum</h5>
-        <h2>lorem ipsum</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aliquam totam incidunt hic. Quod, sint laborum. Voluptatum facilis
-            quam dolore cum iste, ducimus necessitatibus officia, rerum odio
-            quasi incidunt magni.
-          </p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
-          <a href="#" class=""><span>compre agora</span></a>
-        </div>
-      </div>
-
-      <div>
-        <h5>lorem ipsum</h5>
-        <h2>lorem ipsum</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aliquam totam incidunt hic. Quod, sint laborum. Voluptatum facilis
-            quam dolore cum iste, ducimus necessitatibus officia, rerum odio
-            quasi incidunt magni.
-          </p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
-          <a href="#" class=""><span>compre agora</span></a>
-        </div>
-      </div>
-    </section>
-    <div class="col-12 midias">
-      <div class="title-midias">
-        <h1 class="title-midias">Midias</h1>
-      </div>
-    </div>
-    <section class="col-12 midias">
-      <div>
-        <h5>lorem ipsum</h5>
-        <h2>lorem ipsum</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aliquam totam incidunt hic. Quod, sint laborum. Voluptatum facilis
-            quam dolore cum iste, ducimus necessitatibus officia, rerum odio
-            quasi incidunt magni.
-          </p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
-          <a href="#" class=""><span>compre agora</span></a>
-        </div>
-      </div>
-
-      <div>
-        <h5>lorem ipsum</h5>
-        <h2>lorem ipsum</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aliquam totam incidunt hic. Quod, sint laborum. Voluptatum facilis
-            quam dolore cum iste, ducimus necessitatibus officia, rerum odio
-            quasi incidunt magni.
-          </p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
-          <a href="#" class=""><span>compre agora</span></a>
-        </div>
-      </div>
-
-      <div>
-        <h5>lorem ipsum</h5>
-        <h2>lorem ipsum</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aliquam totam incidunt hic. Quod, sint laborum. Voluptatum facilis
-            quam dolore cum iste, ducimus necessitatibus officia, rerum odio
-            quasi incidunt magni.
-          </p>
-          <ul>
-            <li><span>lorem ipsum</span><span>R$30,00</span></li>
-            <li><span>lorem ipsum</span><span>R$30,00</span></li>
-            <li><span>lorem ipsum</span><span>R$30,00</span></li>
-          </ul>
-          <a href="#" class=""><span>compre agora</span></a>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
+  </div>
+</section>
