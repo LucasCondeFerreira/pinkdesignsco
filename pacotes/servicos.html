@@ -5,10 +5,14 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    transform: translate(0, 50%);
+    transform: translate(0, 10%);
   }
 
   @media (min-width: 1px) and (max-width: 1023px) {
+    div.servicos > div.title-servicos {
+      transform: translate(0, 15%);
+    }
+
     div.servicos > div.title-servicos > h1.title-servicos {
       width: 50%;
     }
@@ -54,8 +58,13 @@
       width: 30%;
     }
 
+    section.servicos > div {
+      border: #000 solid 4px;
+    }
+
     section.servicos > div > div {
       padding: 3rem 5rem 6rem 5rem;
+      border: #000 solid 4px;
     }
 
     section.servicos > div > div > h1 {
@@ -83,7 +92,7 @@
   }
 
   section.servicos {
-    padding: 8rem 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
