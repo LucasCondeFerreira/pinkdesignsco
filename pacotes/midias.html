@@ -6,6 +6,12 @@
   }
 
   @media (min-width: 1px) and (max-width: 1023px) {
+    section.midias {
+      padding-top: 0rem;
+    }
+    div.midias:nth-child(1) {
+      padding-top: 5rem;
+    }
     div.midias > div.title-midias > h1.title-midias {
       width: 60%;
     }
@@ -52,9 +58,22 @@
     section.midias > div > h2 {
       font-size: 3rem !important;
     }
+
+    div.midias > div.title-midias > h2.title-midias {
+      font-size: 1.2rem !important;
+      transform: translate(0, 60%);
+    }
   }
 
   @media (min-width: 1024px) {
+    section.midias {
+      padding-top: 8rem;
+    }
+
+    div.midias:nth-child(1) {
+      padding-top: 5rem;
+    }
+
     div.midias > div.title-midias > h1.title-midias {
       width: 30%;
     }
@@ -99,6 +118,11 @@
     section.midias > div > h2 {
       font-size: 5rem !important;
     }
+
+    div.midias > div.title-midias > h2.title-midias {
+      font-size: 2.5rem !important;
+      transform: translate(0, 30%);
+    }
   }
 
   div.midias > p.text-midias {
@@ -109,7 +133,6 @@
   div.midias:nth-child(1) {
     display: flex;
     padding: 2rem;
-    padding-top: 5rem;
   }
   div.midias > div.title-midias {
     display: flex;
@@ -117,8 +140,17 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    transform: translate(0, -50%);
+    transform: translate(0, -70%);
   }
+
+  div.midias > div.title-midias > h2.title-midias {
+    display: inline-block;
+    font-family: "Lemon Milk";
+    color: #000;
+    font-weight: 500;
+    min-height: 4rem;
+  }
+
   div.midias > div.title-midias > h1.title-midias {
     display: block;
     background-color: #ff037a;
@@ -128,7 +160,6 @@
   }
 
   section.midias {
-    padding-top: 8rem;
     display: flex;
     flex-wrap: wrap;
 
@@ -184,6 +215,7 @@
 
 <div class="col-12 midias">
   <div class="title-midias">
+    <h2 class="title-midias">Pacotes de</h2>
     <h1 class="title-midias">Midias Sociais</h1>
   </div>
 </div>

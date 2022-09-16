@@ -37,6 +37,50 @@
     color: #ff037a;
   }
 
+  @media (min-width: 1px) and (max-width: 1023px) {
+    h3.title-slides {
+      font-size: 3rem !important;
+    }
+
+    h2.title-slides {
+      font-size: 0.9rem !important;
+      transform: translate(0, 70%);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2.title-slides {
+      font-size: 2.5rem !important;
+      transform: translate(0, 30%);
+    }
+  }
+
+  div.title-slides {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  h2.title-slides {
+    display: inline-block;
+    font-family: "Lemon Milk";
+    color: #000;
+    font-weight: 500;
+    min-height: 4rem;
+  }
+
+  h3.title-slides {
+    display: block;
+    background-color: transparent;
+    color: #ff037a;
+    font-family: "Albra";
+    text-transform: capitalize;
+    min-height: 4rem;
+  }
+
   div.slide-div {
     display: flex;
     padding: 0 2.5rem;
@@ -82,6 +126,10 @@
 </style>
 
 <!-- Swiper -->
+<div class="title-slides">
+  <h2 class="title-slides">Nosso processo</h2>
+  <h3 class="title-slides">explicado:</h3>
+</div>
 <div class="swiper-wrapper">
   <div class="swiper-slide slide-div">
     <div class="slide-img">
