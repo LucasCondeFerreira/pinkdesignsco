@@ -9,7 +9,7 @@
     padding: 5rem 0;
     margin: 2rem 0;
   }
-  div.banner > span:nth-child(1) {
+  div.banner > div > div > span:nth-child(1) {
     display: block;
     padding: 1.5rem;
     align-items: center;
@@ -17,13 +17,13 @@
     background-color: #ff037a;
   }
 
-  div.banner > span:nth-child(1) > h1 {
+  div.banner > div > div > span:nth-child(1) > h1 {
     font-family: "Lemon Milk";
     font-weight: 800;
     color: #fff;
   }
 
-  div.banner > span:nth-child(2) {
+  div.banner > div > div > span:nth-child(2) {
     display: block;
     align-items: center;
     text-align: center;
@@ -32,39 +32,74 @@
     div.banner {
       min-height: 420px;
     }
-    div.banner > span:nth-child(1) {
-      width: 30%;
+    div.banner > div > div > span:nth-child(1) {
+      width: 80%;
     }
 
-    div.banner > span:nth-child(2) {
-      width: 30%;
+    div.banner > div > div > span:nth-child(2) {
+      width: 80%;
+    }
+    div.banner > div > div.what-img {
+      display: flex;
+    }
+
+    div.banner > div > div > img {
+      align-items: flex-end;
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
     }
   }
   @media (min-width: 1px) and (max-width: 1023px) {
     div.banner {
+      display: flex;
       min-height: 180px;
       padding: 3rem 0;
     }
-    div.banner > span:nth-child(1) {
-      width: 40%;
+    div.banner > div {
+      justify-content: space-around;
+    }
+    div.banner > div > div > span:nth-child(1) {
+      width: 90%;
       padding: 0.5rem;
     }
 
-    div.banner > span:nth-child(1) > h1 {
+    div.banner > div > div > span:nth-child(1) > h1 {
       font-size: 28px;
     }
 
-    div.banner > span:nth-child(2) {
-      width: 40%;
+    div.banner > div > div > span:nth-child(2) {
+      width: 90%;
+    }
+
+    div.banner > div > div.what-img {
+      display: flex;
+    }
+
+    div.banner > div > div > img {
+      align-items: center;
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
     }
   }
 
-  div.banner > span:nth-child(2) > h1 {
+  div.banner > div > div > span:nth-child(2) > h1 {
     font-size: 6rem;
     color: #ff037a;
   }
 </style>
 <div class="col-md-12 banner">
-  <span><h1>O QUE</h1></span>
-  <span><h1>fazemos?</h1></span>
+  <div class="row col-md-12">
+    <div class="col-md-5">
+      <span><h1>O QUE</h1></span>
+      <span><h1>fazemos?</h1></span>
+    </div>
+    <div class="col-sm-3 justify-content-center what-img">
+      <img src="./assets/images/midia-social-pacote.JPEG" alt="#" />
+    </div>
+    <div class="col-sm-3 justify-content-center what-img">
+      <img src="./assets/images/point-pizzaria.JPG" alt="#" />
+    </div>
+  </div>
 </div>
