@@ -1,30 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Titulo Trabalhos -->
 
-    <!-- Link static style sheet -->
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+<style>
+  .trabalhos {
+    color: rgb(252, 252, 252);
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.trabalhos {
+      background-color: #ff037a;
+      padding: 2rem;
+      padding-top: 4.5rem;
+      align-items: start;
+      justify-content: start;
+      text-align: start;
+    }
 
-    <!-- Link custom style sheet -->
-    <link rel="stylesheet" href="../assets/styles/custom.css" />
+    h1.trabalhos {
+      font-size: 3rem !important;
+    }
 
-    <!-- Font Awesome script -->
+    h4.trabalhos {
+      font-family: "Lemon Milk";
+      font-size: 1rem !important;
+      font-weight: 700;
+      display: inline-block;
+      padding: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
 
-    <script
-      src="https://kit.fontawesome.com/9efff873bb.js"
-      crossorigin="anonymous"
-    ></script>
+  @media (min-width: 1024px) {
+    div.trabalhos {
+      background-color: #ff037a;
+      padding: 2rem 5rem;
+      padding-top: 4.5rem;
+      align-items: start;
+      justify-content: start;
+      text-align: start;
+    }
 
-    <title>Codingwebart</title>
-  </head>
-  <body>
-    <div class="trabalhos col-md-12">
-      <h4 class="trabalhos">compre agora</h4>
-      <h1 class="trabalhos">Confira aqui</h1>
-      <h1 class="trabalhos">Nossos últimos trabalhos</h1>
-    </div>
-  </body>
-</html>
+    h1.trabalhos {
+      font-size: 4.6rem !important;
+    }
+
+    h4.trabalhos {
+      font-family: "Lemon Milk";
+      font-size: 2rem;
+      font-weight: 700;
+      display: inline-block;
+      padding: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
+</style>
+<div class="trabalhos col-md-12">
+  <h4 class="trabalhos">compre agora</h4>
+  <h1 class="trabalhos">Confira aqui</h1>
+  <h1 class="trabalhos">Nossos últimos trabalhos</h1>
+</div>

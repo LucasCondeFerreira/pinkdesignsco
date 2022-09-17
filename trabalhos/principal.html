@@ -1,75 +1,140 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Principal Trabalhos -->
+<style>
+  @media (min-width: 1px) and (max-width: 580px) {
+    div.cards-trabalhos {
+      padding-top: 2rem;
+    }
 
-    <!-- Link static style sheet -->
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    img.principal {
+      padding: 0 1rem;
+      width: 100%;
+      height: 320px;
+    }
 
-    <!-- Link custom style sheet -->
-    <link rel="stylesheet" href="../assets/styles/custom.css" />
+    h2.principal {
+      padding: 1rem 0;
+      font-family: "Lemon Milk";
+      text-transform: uppercase;
+      font-size: 1.85rem !important;
+      font-weight: 800;
+    }
+  }
 
-    <!-- Font Awesome script -->
+  @media (min-width: 581px) and (max-width: 1023px) {
+    div.cards-trabalhos {
+      padding-top: 3rem;
+    }
 
-    <script
-      src="https://kit.fontawesome.com/9efff873bb.js"
-      crossorigin="anonymous"
-    ></script>
+    img.principal {
+      padding: 0 1rem;
+      width: 100%;
+      height: 360px;
+    }
 
-    <title>Codingwebart</title>
-  </head>
-  <body>
-    <div class="principal container">
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-      <div class="cards-principal col-md-5">
-        <img
-          src="../assets/images/heaven.JPEG"
-          alt="foto trabalhos"
-          class="principal"
-        />
-        <h2 class="principal">lorem ipsum</h2>
-      </div>
-    </div>
-  </body>
-</html>
+    h2.principal {
+      padding: 1rem 0;
+      font-family: "Lemon Milk";
+      text-transform: uppercase;
+      font-size: 2.35rem !important;
+      font-weight: 800;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    div.cards-trabalhos {
+      padding-top: 6rem;
+    }
+    div.principal :nth-child(odd) {
+      padding-top: 0;
+    }
+    img.principal {
+      padding: 0 1rem;
+      width: 100%;
+      height: 380px;
+    }
+
+    h2.principal {
+      padding: 1rem 0;
+      font-family: "Lemon Milk";
+      text-transform: uppercase;
+      font-size: 2.35rem !important;
+      font-weight: 800;
+    }
+  }
+
+  div.cards-trabalhos {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    align-items: center;
+  }
+
+  div.principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<div class="principal container">
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+  <div class="cards-trabalhos col-lg-5">
+    <a href="#" class="btn">
+      <img
+        src="../assets/images/heaven.JPEG"
+        alt="foto trabalhos"
+        class="principal"
+      />
+      <h2 class="principal">lorem ipsum</h2>
+    </a>
+  </div>
+</div>
