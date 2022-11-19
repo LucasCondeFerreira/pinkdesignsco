@@ -7,7 +7,7 @@
 ![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-18.png)
 ![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-23.png)
 ![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-40.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%18-59-14.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-59-14.png)
 
 # Site Institucional Pink Designs
 
