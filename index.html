@@ -40,21 +40,1244 @@
 
     <title>Home</title>
   </head>
-  <body>
-    <div w3-include-html="./surfaces/header.html"></div>
-    <div w3-include-html="./home/foto.html"></div>
-    <div w3-include-html="./home/marca.html"></div>
-    <div w3-include-html="./home/mensagem-um.html"></div>
-    <div w3-include-html="./home/descricao.html"></div>
-    <div w3-include-html="./home/mensagem-dois.html"></div>
-    <div w3-include-html="./home/pacotes.html"></div>
-    <div w3-include-html="./home/banner.html"></div>
-    <div w3-include-html="./surfaces/slide.html" class="swiper mySwiper"></div>
-    <div w3-include-html="./surfaces/footer.html"></div>
+  <body cz-shortcut-listen="true">
+    <div><style>
+  @media (min-width: 1px) and (max-width: 767px) {
+    .DivHeader {
+      padding: 0 1rem;
+    }
+    .Ul {
+      max-width: 80%;
+    }
+
+    img.A {
+      margin: 15px 0;
+      width: 75%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .DivHeader {
+      padding: 0 1.5rem;
+    }
+    .Ul {
+      padding: 0 1.5rem;
+    }
+    ul.A {
+      width: 40%;
+    }
+    a.A {
+      width: 100%;
+    }
+    img.A {
+      width: 75%;
+      margin: 15px 0;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1159px) {
+    .DivHeader {
+      max-width: 960px;
+      padding: 0 2px;
+    }
+  }
+
+  @media (min-width: 1160px) {
+    .DivHeader {
+      max-width: 1160px;
+    }
+  }
+
+  div.pink {
+    background-color: #151515 !important;
+    width: 100%;
+  }
+  .DivHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #151515 !important;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .Nav {
+    justify-content: space-around;
+    right: 0;
+    background-color: #151515 !important;
+  }
+
+  .Ul {
+    background-color: #151515 !important;
+    margin: 1rem 0;
+    justify-content: space-around;
+    gap: 28px;
+  }
+
+  .A {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #151515 !important;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  a.A {
+    font-family: "LEMON MILK";
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  h4.A {
+    font-family: "Karla";
+    text-transform: uppercase;
+  }
+</style>
+<div class="pink">
+  <nav class="navbar DivHeader navbar-expand-lg navbar-dark bg-light">
+    <ul class="navbar-nav Ul A list">
+      <li class="nav-item">
+        <a class="navbar-brand A" href="./index.html"><img src="./assets/images/logo-nova.png" class="A" alt="#"></a>
+      </li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse Nav" id="navbarNav">
+      <ul class="navbar-nav Ul list">
+        <li class="nav-item">
+          <a class="nav-link A" href="./index.html"><h4 class="A">Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link A" href="./trabalhos.html"><h4 class="A">Trabalhos</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link A" href="./pacotes.html"><h4 class="A">Compre aqui</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link A" href="./termos.html"><h4 class="A">Nossos Termos</h4></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>
+    <div><style>
+  div.foto {
+    background-image: url(./assets/images/background-foto.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 600px;
+    width: 100%;
+  }
+
+  div.foto > h1 {
+    display: none;
+  }
+
+  @media (min-width: 1px) and (max-width: 760px) {
+    div.foto {
+      background-image: none;
+      margin: 0;
+      width: 100%;
+      padding: 3rem 2rem;
+      min-height: 1px;
+
+      background-color: #ff037a;
+    }
+    div.foto > h1 {
+      display: inline-block;
+      text-align: start;
+      font-size: 38px !important;
+      color: #fff;
+    }
+  }
+</style>
+<div class="foto col-md-12">
+  <h1>
+    Branding estratégico <br>
+    para <i>sua</i> marca
+  </h1>
+</div>
+</div>
+    <div><style>
+  .contain {
+    padding: 3rem 0;
+
+    background-color: #fff;
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  div.containtext {
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.containtext > h1 {
+    padding: 1.2rem 0;
+    color: #ff037a;
+  }
+
+  div.containtext > p {
+    display: block;
+    text-align: center;
+    max-width: 820px;
+
+    margin: 0 auto;
+  }
+
+  div.imagens {
+    display: flex;
+    margin: 1rem auto;
+    padding-left: 3rem;
+
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  div.imagens > p {
+    text-align: center;
+  }
+
+  div.text {
+    margin: 0;
+    padding: 7rem 0;
+
+    background-color: transparent;
+  }
+
+  div.text > h2 {
+    color: #ff037a;
+    text-align: start;
+    padding: 1.2rem 0;
+  }
+
+  section.imagem {
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    background-color: transparent;
+  }
+
+  div.imagem {
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    background-color: transparent;
+  }
+
+  img.imagemone {
+    border: 2px solid #ff037a;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  img.imagemtwo {
+    border: 2px solid #ff037a;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media screen and (min-width: 1024px) {
+    section.imagem {
+      display: none;
+    }
+    div.imagem {
+      display: flex;
+    }
+    div.imagens {
+      height: 480px;
+    }
+    div.imagemone {
+      position: absolute;
+      max-width: 320px;
+      max-height: 320px;
+      z-index: 2;
+
+      top: 13rem;
+      left: 13rem;
+    }
+    div.imagemtwo {
+      position: absolute;
+      max-width: 320px;
+      max-height: 320px;
+
+      top: 4rem;
+      left: 5rem;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.imagens {
+      height: auto;
+    }
+    div.containtext {
+      padding: 1rem 2rem;
+    }
+    div.text {
+      padding: 1rem 2rem;
+    }
+    div.imagem {
+      display: none;
+    }
+    section.imagem {
+      display: block;
+      min-height: 250px;
+    }
+    div.imagemone {
+      position: absolute;
+      max-width: 160px;
+      max-height: 160px;
+      z-index: 2;
+
+      top: 5rem;
+      left: 11rem;
+    }
+    div.imagemtwo {
+      position: absolute;
+      max-width: 160px;
+      max-height: 160px;
+
+      top: 0;
+      left: 5rem;
+    }
+  }
+
+  @media (min-width: 520px) and (max-width: 860px) {
+    section.imagem {
+      display: none;
+    }
+    div.imagem {
+      display: flex;
+    }
+
+    div.imagens {
+      height: 480px;
+    }
+    div.imagemone {
+      position: absolute;
+      max-width: 220px;
+      max-height: 220px;
+      z-index: 2;
+
+      top: 12rem;
+      left: 8rem;
+    }
+    div.imagemtwo {
+      position: absolute;
+      max-width: 220px;
+      max-height: 220px;
+
+      top: 5rem;
+      left: 2rem;
+    }
+  }
+</style>
+<div class="contain container">
+  <section class="imagem col-md-6">
+    <div class="imagemone">
+      <img src="./assets/images/logo-booster.jpg" alt="#" class="imagemone">
+    </div>
+    <div class="imagemtwo">
+      <img src="./assets/images/mockup-booster.jpg" alt="#" class="imagemtwo">
+    </div>
+  </section>
+  <div class="containtext">
+    <h1>
+      Marca estratégica com <br>
+      design poderoso e incrivel
+    </h1>
+    <p>
+      Quando se trata do seu branding sabemos que ele sustenta as iniciativas
+      estratégicas da sua empresa e contribui para o sucesso geral do negócio. E
+      é por isso que estamos aqui para você. Criando o seu design para elevar
+      seu negócio ao próximo nível.
+    </p>
+  </div>
+  <div class="imagens row col-md-12">
+    <div class="text col-md-6">
+      <h2>Branding é mais do que design</h2>
+      <p>
+        No seu branding está o poder da sua marca, e tudo que ela tem a oferecer
+        para o mundo. Você quer, e precisa que a sua marca seja lembrada e tenha
+        impacto na vida das pessoas que são alcançadas por ela.
+        <br>
+        <br>
+        Então por que não deixar a sua marca no mundo através do seu branding?
+        Estamos aqui para auxiliar esse processo, e você alcançar o seu objetivo
+        mais rapidamente.
+      </p>
+    </div>
+    <div class="imagem col-md-6">
+      <div class="imagemone">
+        <img src="./assets/images/logo-booster.jpg" alt="#" class="imagemone">
+      </div>
+      <div class="imagemtwo">
+        <img src="./assets/images/mockup-booster.jpg" alt="#" class="imagemtwo">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div><style>
+  div.section-mensagem {
+    margin: 0;
+    width: 100%;
+    padding: 1.5rem 3rem 1.5rem;
+    min-height: 220px;
+
+    background-color: #ff037a;
+  }
+
+  div.section-mensagem > h1 {
+    text-align: center;
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.section-mensagem {
+      padding: 1.5rem 1rem 1.5rem;
+      min-height: 1px;
+    }
+  }
+</style>
+<div class="col-md-12 section-mensagem">
+  <h1>
+    Você está pronto para ter <br>
+    mais que uma logo?
+  </h1>
+</div>
+</div>
+    <div><style>
+  div.imagem-fundo {
+    border: 2px solid #ff037a;
+    background-image: url(./assets/images/heaven.JPEG);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+    margin: 0;
+  }
+
+  div.descricao-title {
+    width: 580px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.descricao-title > span {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: #ff037a;
+  }
+
+  div.descricao-title > span > h1 {
+    font-family: "Lemon Milk";
+    font-weight: 800;
+    color: #fff;
+  }
+
+  div.descricao-title > h1 {
+    margin-top: 1rem;
+    color: #ff037a;
+  }
+
+  div.container-descricao {
+    max-width: 840px;
+  }
+
+  div.descricao {
+    margin-bottom: 4rem;
+  }
+  div.descricao > h4 {
+    margin-left: 0.3rem;
+    font-family: "Lemon Milk";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  div.descricao > h2 {
+    margin-top: 0.3rem;
+    color: #ff037a;
+  }
+  div.descricao > p {
+    margin-top: 0.3rem;
+  }
+  div.descricao > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.descricao > div > a.btn {
+    border: solid 2px #000;
+    margin-top: 1.2rem;
+    padding: 0.85rem 4rem;
+  }
+  div.descricao > div > a.btn > span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Karla";
+
+    color: #000;
+  }
+
+  @media (min-width: 1024px) {
+    div.descricao-title {
+      transform: translate(0, -30%);
+    }
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.imagem-fundo {
+      border: 2px solid #ff037a;
+      background-image: url(./assets/images/heaven.JPEG);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 170px;
+      width: 100%;
+      margin: 0;
+    }
+
+    div.descricao-title {
+      transform: translate(0, -35%);
+      width: 60%;
+      padding: 1rem;
+    }
+
+    div.descricao-title > h1 {
+      margin-top: 0.5rem;
+    }
+
+    div.descricao {
+      margin-bottom: 4rem;
+      padding: 0 2rem;
+    }
+
+    div.descricao > h4 {
+      font-size: 12px !important;
+    }
+
+    div.descricao > div {
+      justify-content: start;
+    }
+
+    div.descricao > div > a.btn {
+      border: solid 1px #000;
+      margin-top: 1.2rem;
+      padding: 0.5rem 3rem;
+    }
+    div.descricao > div > a.btn > span {
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Karla";
+
+      color: #000;
+    }
+  }
+</style>
+<div class="col-md-12 imagem-fundo"></div>
+<div class="col-md-12">
+  <div class="descricao-title">
+    <span><h1>O QUE</h1></span>
+    <h1>fazemos?</h1>
+  </div>
+  <div class="container container-descricao">
+    <div class="descricao">
+      <h4>Para Re-branding ou do zero</h4>
+      <h2>Aumente o nível do seu branding</h2>
+      <p>
+        Um bom branding tem a capacidade de fazer os seus clientes se sentirem
+        de uma certa maneira específica. Tem a capacidade de marcar, e ser
+        lembrado por aí. Trazendo clientes e confiança para o seu negócio, e
+        fazendo seu negócio memorável e consistente e isso distingue você da
+        concorrência.
+      </p>
+      <div>
+        <a href="./pacotes.html?#pacotes" class="btn"><span>SAIBA MAIS</span></a>
+      </div>
+    </div>
+    <div class="descricao">
+      <h4>Para lojas memoráveis</h4>
+      <h2>Pacotes de social media</h2>
+      <p>
+        Esteja você procurando modelos de mídia social, ativos digitais ou
+        embalagem - nós temos o que você precisa! Leia mais sobre nossos pacotes
+        e serviços e porque eles deixarão sua empresa um pouco acima do resto.
+      </p>
+      <div>
+        <a href="./pacotes.html?#midias" class="btn"><span>SAIBA MAIS</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div><style>
+  div.section-mensagem {
+    margin: 0;
+    width: 100%;
+    padding: 1.5rem 3rem 1.5rem;
+    min-height: 220px;
+
+    background-color: #ff037a;
+  }
+
+  div.section-mensagem > h1 {
+    text-align: center;
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.section-mensagem {
+      padding: 1.5rem 1rem 1.5rem;
+      min-height: 1px;
+    }
+  }
+</style>
+<div class="col-md-12 section-mensagem">
+  <h1>
+    Você está pronto para <br>
+    mudar a cara do seu negócio?
+  </h1>
+</div>
+</div>
+    <div><style>
+  div.button-rotate {
+    position: relative;
+    min-height: 600px;
+  }
+
+  a.button-rotate {
+    display: block;
+    width: 415px;
+    height: 100px;
+    margin: 3rem auto;
+    position: absolute;
+    top: 13rem;
+    left: calc(0px - 4vw);
+
+    border: 1px #ff037a solid;
+    border-radius: 50px;
+
+    transform: rotate(-90deg);
+    background: transparent;
+  }
+  div.pacote > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  div.pacote > div {
+    border: 2px solid #ff037a;
+    position: relative;
+  }
+
+  @media (max-width: 1023px) {
+    div.button-rotate {
+      display: none;
+    }
+    div.pacote {
+      width: 260px;
+      height: 330px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    div.pacote {
+      padding: 0;
+      width: calc(260px + 3.5vw);
+      height: calc(310px + 2vw);
+    }
+  }
+
+  a.button-rotate:hover {
+    background-color: #f1d9ef;
+  }
+
+  a.button-rotate > h2 {
+    width: 100%;
+    margin-top: 1.2rem;
+
+    font-size: 2.8rem;
+    color: #ff037a;
+    text-align: center;
+    align-items: center;
+  }
+
+  div.row-pacote {
+    padding: 0 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1150px) {
+    div.row-pacote {
+      min-height: 760px;
+    }
+    div.pacote {
+      top: 5%;
+    }
+  }
+
+  div.pacote {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+  }
+  div.darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+  div.darken:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  div.pacote > a.button-info {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: #ff037a;
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Albra";
+
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+  }
+
+  @media (min-width: 1150px) {
+    div.row-pacote {
+      min-height: 600px;
+    }
+    div.pacote {
+      top: 20%;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.row-pacote {
+      width: 100%;
+      min-height: 600px;
+      margin-left: 12px;
+    }
+    div.pacote {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 240px;
+      height: 260px;
+
+      top: 0;
+      margin: 1rem 2rem;
+    }
+
+    div.pacote > a.button-info {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="col-md-2 button-rotate">
+    <a class="btn button-rotate" href="./pacotes.html">
+      <h2>Compre Agora</h2>
+    </a>
+  </div>
+  <div class="row col-md-10 row-pacote">
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/IMG-2000.JPEG" alt="">
+      </div>
+      <a href="./pacotes.html?#start-package" class="btn button-info">Start Logo Package</a>
+    </div>
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/midia-social-pacote.JPEG" alt="">
+      </div>
+      <a href="./pacotes.html?#midias" class="btn button-info">Midias Sociais</a>
+    </div>
+    <div class="col-md-4 pacote">
+      <div>
+        <div class="darken"></div>
+        <img src="./assets/images/IMG-1000.JPEG" alt="">
+      </div>
+      <a href="./pacotes.html?#premium-package" class="btn button-info">
+        Premium Branding Package
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+    <div><style>
+  div.banner {
+    border: 2px solid #ff037a;
+    background-image: url(./assets/images/heaven.JPEG);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 420px;
+    width: 100%;
+    padding: 5rem 0;
+    margin: 2rem 0;
+  }
+  div.banner > div > div > span:nth-child(1) {
+    display: block;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: #ff037a;
+  }
+
+  div.banner > div > div > span:nth-child(1) > h1 {
+    font-family: "Lemon Milk";
+    font-weight: 800;
+    color: #fff;
+  }
+
+  div.banner > div > div > span:nth-child(2) {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 1024px) {
+    div.banner {
+      min-height: 420px;
+    }
+
+    div.banner > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    div.banner > div > div > span:nth-child(1) {
+      width: 80%;
+    }
+
+    div.banner > div > div > span:nth-child(2) {
+      width: 80%;
+    }
+    div.banner > div > div.what-img {
+      display: flex;
+    }
+
+    div.banner > div > div > a > img {
+      border: 2px solid #ff037a;
+      align-items: flex-end;
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 1px) and (max-width: 1023px) {
+    div.banner {
+      min-height: 180px;
+      padding: 3rem 0;
+    }
+    div.banner > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    div.banner > div > div > span:nth-child(1) {
+      width: 70%;
+      padding: 0.5rem;
+    }
+
+    div.banner > div > div > span:nth-child(1) > h1 {
+      font-size: 28px;
+    }
+
+    div.banner > div > div > span:nth-child(2) {
+      width: 70%;
+    }
+
+    div.banner > div > div.what-img {
+      display: flex;
+    }
+
+    div.banner > div > div > a > img {
+      border: 2px solid #ff037a;
+      align-items: center;
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 1px) and (max-width: 767px) {
+    div.banner > div > div > span:nth-child(1) {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    div.banner > div > div > span:nth-child(2) {
+      width: 100%;
+    }
+
+    div.banner > div > div.what-img {
+      display: block;
+      margin: 0 auto;
+    }
+    div.banner > div > div:nth-child(3) {
+      display: none !important;
+    }
+
+    div.banner {
+      min-height: 180px;
+      padding: 1rem 0;
+    }
+
+    div.banner > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  div.banner > div > div > span:nth-child(2) > h1 {
+    font-size: 6rem;
+    color: #ff037a;
+  }
+</style>
+<div class="col-md-12 banner">
+  <div class="col-md-12">
+    <div class="col-5">
+      <span><h1>O QUE</h1></span>
+      <span><h1>fazemos?</h1></span>
+    </div>
+    <div class="col-sm-3 what-img">
+      <a href="./trabalhos.html">
+        <img src="./assets/images/midia-social-pacote.JPEG" alt="#">
+      </a>
+    </div>
+    <div class="col-3 what-img">
+      <a href="./trabalhos.html">
+        <img src="./assets/images/point-pizzaria.JPG" alt="#">
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"><style>
+  .swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem;
+    margin: 4rem 0;
+  }
+
+  .swiper-slide {
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ff037a;
+  }
+
+  @media (min-width: 1px) and (max-width: 1023px) {
+    h3.title-slides {
+      font-size: 3rem !important;
+    }
+
+    h2.title-slides {
+      font-size: 0.9rem !important;
+      transform: translate(0, 70%);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h3.title-slides {
+      font-size: 4.2rem !important;
+    }
+    h2.title-slides {
+      font-size: 1.5rem !important;
+      transform: translate(0, 30%);
+    }
+  }
+
+  div.title-slides {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  h2.title-slides {
+    display: inline-block;
+    font-family: "Lemon Milk";
+    color: #000;
+    font-weight: 500;
+    min-height: 4rem;
+  }
+
+  h3.title-slides {
+    display: block;
+    background-color: transparent;
+    color: #ff037a;
+    font-family: "Albra";
+    text-transform: capitalize;
+    min-height: 4rem;
+  }
+
+  div.slide-div {
+    display: flex;
+    padding: 0 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.slide-div > h3 {
+    margin: 0.8rem 0;
+    color: #ff037a;
+    font-weight: 600;
+    font-family: "Lemon Milk";
+    text-transform: uppercase;
+  }
+  div.slide-div > p {
+    color: #000;
+  }
+  div.slide-img {
+    display: flex;
+    width: calc(160px + 2vw);
+    height: calc(160px + 2vw);
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff037a;
+    /*background-image: url(./assets/images/heaven.JPEG);*/
+  }
+  div.slide-img > span {
+    text-align: center;
+    font-family: "Albra";
+    font-size: 8rem;
+
+    color: #fff;
+  }
+
+  @media (min-width: 1px) and (max-width: 629px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: transparent;
+    }
+  }
+</style>
+
+<!-- Swiper -->
+<div class="title-slides">
+  <h2 class="title-slides">Nosso processo</h2>
+  <h3 class="title-slides">explicado:</h3>
+</div>
+<div class="swiper-wrapper" id="swiper-wrapper-59e9df86abf97f9f" aria-live="polite">
+  <div class="swiper-slide slide-div swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 416.667px; margin-right: 15px;">
+    <div class="slide-img">
+      <span>1</span>
+    </div>
+    <h3>Entrada</h3>
+    <p>
+      Você escolherá o pacote, e fará o pagamento do valor respectivo ao projeto
+      escolhido. Após isso irá assinar o nosso contrato para garantir o seu
+      projeto.
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 416.667px; margin-right: 15px;">
+    <div class="slide-img">
+      <span>2</span>
+    </div>
+    <h3>Descoberta</h3>
+    <p>
+      Vamos conversar e você vai me contar mais sobre o seu negócio e seu
+      objetivo com a sua marca.
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 416.667px; margin-right: 15px;">
+    <div class="slide-img">
+      <span>3</span>
+    </div>
+    <h3>Design</h3>
+    <p>
+      O passo mais emocionante de todos! Sente-se, relaxe e espere seu pacote
+      chegar em sua caixa de entrada
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 416.667px; margin-right: 15px;">
+    <div class="slide-img">
+      <span>4</span>
+    </div>
+    <h3>Refinamentos</h3>
+    <p>
+      Essa é a sua chance de fazer mudanças na sua marca, com até cinco
+      alterações gratuitas seu feedback garante que atingimos a marca de forma
+      eficiente!
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 416.667px; margin-right: 15px;">
+    <div class="slide-img">
+      <span>5</span>
+    </div>
+    <h3>Entrega</h3>
+    <p>
+      Assim que finalizarmos o seu projeto, vamos juntar os arquivos em alta
+      resolução e transferi-los para você começar a usar!
+    </p>
+  </div>
+</div>
+
+<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-59e9df86abf97f9f"></div>
+<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-59e9df86abf97f9f"></div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    <div><style>
+  .Div-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #151515 !important;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    max-width: 1160px;
+    min-height: 220px;
+  }
+
+  @media (min-width: 768px) {
+    .Ul-footer {
+      background-color: #151515 !important;
+      margin: auto 0;
+      padding: 0 25px;
+      justify-content: space-around;
+      gap: 28px;
+    }
+    .Div-footer > div {
+      height: 220px;
+    }
+    .Ul-footer > li {
+      list-style: none;
+      text-align: end;
+    }
+
+    .A-footer {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #151515 !important;
+      color: #fff !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .A-footer > h4 {
+      font-family: "Karla";
+    }
+  }
+  @media (min-width: 1px) and (max-width: 767px) {
+    .Ul-footer {
+      display: none;
+    }
+    .Div-footer {
+      min-height: 100px;
+    }
+  }
+</style>
+<div class="pink row">
+  <div class="col-md-4">
+    <nav class="Div-footer">
+      <ul class="Ul-footer">
+      <li class="list">
+        <a class="A-footer" href="#"><h4 class="">Instagram</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">Twitter</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">E-mail</h4></a>
+      </li>
+      <li class="list-item">
+        <a class="A-footer" href="#"><h4 class="">Tik tok</h4></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+  <img src="./assets/images/logo-nova.png" alt="A">
+  <p style='color: white; font-size: 12px;'> Todos os direitos Reservados 2022</p>
+</div>
+  <div class="col-md-4">
+    <nav class="Div-footer">
+      <ul class="Ul-footer">
+      <li class="list-item">
+        <a class="A-footer" href="https://pinkdesignsco.com/termos.html"><h4 class="">Termos de Uso</h4></a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+  </div>
+</div>
 
     <script>
       includeHTML();
       slide();
     </script>
-  </body>
+  
+
+<script type="text/javascript" src="chrome-extension://nogempgplicnckhcmgjjjgflmipmbgaf/variables-sharing.js"></script></body>
 </html>
