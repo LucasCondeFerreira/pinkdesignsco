@@ -1,460 +1,558 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link static style sheet -->
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+		<!-- Link static style sheet -->
+		<link rel="stylesheet" href="./assets/styles/style.css" />
 
-    <!-- Link custom style sheet -->
-    <link rel="stylesheet" href="./assets/styles/custom.css" />
+		<!-- Link custom style sheet -->
+		<link rel="stylesheet" href="./assets/styles/custom.css" />
 
-    <!-- Link custom Js script -->
-    <script src="./js/index.js"></script>
-    <script src="./js/slide.js"></script>
+		<!-- Link custom Js script -->
+		<script src="./js/index.js"></script>
+		<script src="./js/slide.js"></script>
 
-    <!-- Swioer Slides dependecie and scripts  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+		<!-- Swioer Slides dependecie and scripts  -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Bootstrap script -->
+		<!-- Bootstrap script -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <!-- Font Awesome script -->
+		<!-- Font Awesome script -->
 
-    <script
-      src="https://kit.fontawesome.com/9efff873bb.js"
-      crossorigin="anonymous"
-    ></script>
+		<script
+			src="https://kit.fontawesome.com/9efff873bb.js"
+			crossorigin="anonymous"
+		></script>
 
-    <title>Trabalhos</title>
-  </head>
-  <body cz-shortcut-listen="true">
-    <div w3-include-html="./surfaces/header.html"></div>
-    <div><!-- Titulo Trabalhos -->
+		<title>Trabalhos</title>
+	</head>
+	<body cz-shortcut-listen="true">
+		<div w3-include-html="./surfaces/header.html"></div>
+		<div>
+			<!-- Titulo Trabalhos -->
 
-<style>
-  .trabalhos {
-    color: rgb(252, 252, 252);
-  }
-  @media (min-width: 1px) and (max-width: 1023px) {
-    div.trabalhos {
-      background-color: #151515;
-      padding: 2rem;
-      padding-top: 4.5rem;
-      align-items: start;
-      justify-content: start;
-      text-align: start;
-    }
+			<style>
+				.trabalhos {
+					color: rgb(252, 252, 252);
+				}
+				@media (min-width: 1px) and (max-width: 1023px) {
+					div.trabalhos {
+						background-color: #151515;
+						padding: 2rem;
+						padding-top: 4.5rem;
+						align-items: start;
+						justify-content: start;
+						text-align: start;
+					}
 
-    h1.trabalhos {
-      font-size: 3rem !important;
-    }
+					h1.trabalhos {
+						font-size: 3rem !important;
+					}
 
-    h4.trabalhos {
-      font-family: "Lemon Milk";
-      font-size: 1rem !important;
-      font-weight: 700;
-      display: inline-block;
-      padding: 1rem 0;
-      text-transform: uppercase;
-    }
-  }
+					h4.trabalhos {
+						font-family: 'Lemon Milk';
+						font-size: 1rem !important;
+						font-weight: 700;
+						display: inline-block;
+						padding: 1rem 0;
+						text-transform: uppercase;
+					}
+				}
 
-  @media (min-width: 1024px) {
-    div.trabalhos {
-      background-color: #151515;
-      padding: 2rem 5rem;
-      padding-top: 4.5rem;
-      align-items: start;
-      justify-content: start;
-      text-align: start;
-    }
+				@media (min-width: 1024px) {
+					div.trabalhos {
+						background-color: #151515;
+						padding: 2rem 5rem;
+						padding-top: 4.5rem;
+						align-items: start;
+						justify-content: start;
+						text-align: start;
+					}
 
-    h1.trabalhos {
-      font-size: 4.6rem !important;
-    }
+					h1.trabalhos {
+						font-size: 4.6rem !important;
+					}
 
-    h4.trabalhos {
-      font-family: "Lemon Milk";
-      font-size: 2rem;
-      font-weight: 700;
-      display: inline-block;
-      padding: 1rem 0;
-      text-transform: uppercase;
-    }
-  }
-</style>
-<div class="trabalhos col-md-12">
-  <h4 class="trabalhos">compre agora</h4>
-  <h1 class="trabalhos">Confira aqui</h1>
-  <h1 class="trabalhos">Nossos últimos trabalhos</h1>
-</div>
-</div>
-    <div><!-- Principal Trabalhos -->
-<style>
-  @media (min-width: 1px) and (max-width: 580px) {
-    div.cards-trabalhos {
-      padding-top: 2rem;
-    }
+					h4.trabalhos {
+						font-family: 'Lemon Milk';
+						font-size: 2rem;
+						font-weight: 700;
+						display: inline-block;
+						padding: 1rem 0;
+						text-transform: uppercase;
+					}
+				}
+			</style>
+			<div class="trabalhos col-md-12">
+				<h4 class="trabalhos">compre agora</h4>
+				<h1 class="trabalhos">Confira aqui</h1>
+				<h1 class="trabalhos">Nossos últimos trabalhos</h1>
+			</div>
+		</div>
+		<div>
+			<!-- Principal Trabalhos -->
+			<style>
+				@media (min-width: 1px) and (max-width: 580px) {
+					div.cards-trabalhos {
+						padding-top: 2rem;
+					}
 
-    div.img-trabalhos {
-      width: 320px;
-      height: 320px;
-    }
-    img.principal {
-      border: 2px solid #ff037a;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+					div.img-trabalhos {
+						width: 320px;
+						height: 320px;
+					}
+					img.principal {
+						border: 2px solid #ff037a;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
 
-    h2.principal {
-      padding: 1rem 0;
-      font-size: 1.4rem !important;
-      text-align: start;
-      font-family: "Lemon Milk";
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
+					h2.principal {
+						padding: 1rem 0;
+						font-size: 1.4rem !important;
+						text-align: start;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+				}
 
-  @media (min-width: 581px) and (max-width: 1023px) {
-    div.cards-trabalhos {
-      padding-top: 3rem;
-    }
+				@media (min-width: 581px) and (max-width: 1023px) {
+					div.cards-trabalhos {
+						padding-top: 3rem;
+					}
 
-    div.img-trabalhos {
-      width: 360px;
-      height: 360px;
-    }
-    img.principal {
-      border: 2px solid #ff037a;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+					div.img-trabalhos {
+						width: 360px;
+						height: 360px;
+					}
+					img.principal {
+						border: 2px solid #ff037a;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
 
-    h2.principal {
-      padding: 1rem 0;
-      font-size: 1.4rem !important;
-      text-align: start;
-      font-family: "Lemon Milk";
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
+					h2.principal {
+						padding: 1rem 0;
+						font-size: 1.4rem !important;
+						text-align: start;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+				}
 
-  @media (min-width: 1024px) {
-    div.cards-trabalhos {
-      padding-top: 6rem;
-    }
-    div.principal :nth-child(odd) {
-      padding-top: 0;
-    }
-    div.img-trabalhos {
-      width: 380px;
-      height: 380px;
-    }
-    img.principal {
-      border: 2px solid #ff037a;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+				@media (min-width: 1024px) {
+					div.cards-trabalhos {
+						padding-top: 6rem;
+					}
+					div.principal :nth-child(odd) {
+						padding-top: 0;
+					}
+					div.img-trabalhos {
+						width: 380px;
+						height: 380px;
+					}
+					img.principal {
+						border: 2px solid #ff037a;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
 
-    h2.principal {
-      padding: 1rem 0;
-      font-size: 1.6rem !important;
-      text-align: start;
-      font-family: "Lemon Milk";
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
+					h1.principal {
+						padding: 1rem 0;
+						font-size: 1.6rem !important;
+						text-align: start;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+				}
 
-  div.cards-trabalhos {
-    display: flex;
-    flex-direction: column;
-    columns: 1;
-    align-items: center;
-  }
-  div.principal {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
-<div class="principal container">
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/point-pizzaria.JPG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">Point Pizzaria</h2>
-    </a>
-  </div>
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/pod-falar.JPG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">PodFalar</h2>
-    </a>
-  </div>
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/IMG-6444.JPG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">Booster Social</h2>
-    </a>
-  </div>
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/celeiro.JPG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">Celeiro</h2>
-    </a>
-  </div>
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/midia-social-pacote.JPEG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">Lady Hair</h2>
-    </a>
-  </div>
-  <div class="cards-trabalhos col-lg-5">
-    <a href="#" class="btn">
-      <div class="img-trabalhos">
-        <img src="../assets/images/IMG-2000.JPEG" alt="foto trabalhos" class="principal">
-      </div>
-      <h2 class="principal">Angels Fusion</h2>
-    </a>
-  </div>
-</div>
-</div>
-    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-android swiper-backface-hidden"><style>
-  .swiper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0 5rem;
-    margin: 4rem 0;
-  }
+				div.cards-trabalhos {
+					display: flex;
+					flex-direction: column;
+					columns: 1;
+					align-items: center;
+				}
+				div.principal {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
+				}
 
-  .swiper-slide {
-    text-align: center;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #ff037a;
-  }
-
-  @media (min-width: 1px) and (max-width: 1023px) {
-    h3.title-slides {
-      font-size: 3rem !important;
-    }
-
-    h2.title-slides {
-      font-size: 0.9rem !important;
-      transform: translate(0, 70%);
-    }
-  }
-
-  @media (min-width: 1024px) {
-    h3.title-slides {
-      font-size: 4.2rem !important;
-    }
-    h2.title-slides {
-      font-size: 1.5rem !important;
-      transform: translate(0, 30%);
-    }
-  }
-
-  div.title-slides {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  h2.title-slides {
-    display: inline-block;
-    font-family: "Lemon Milk";
-    color: #000;
-    font-weight: 500;
-    min-height: 4rem;
-  }
-
-  h3.title-slides {
-    display: block;
-    background-color: transparent;
-    color: #ff037a;
-    font-family: "Albra";
-    text-transform: capitalize;
-    min-height: 4rem;
-  }
-
-  div.slide-div {
-    display: flex;
-    padding: 0 2.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  div.slide-div > h3 {
-    margin: 0.8rem 0;
-    color: #ff037a;
-    font-weight: 600;
-    font-family: "Lemon Milk";
-    text-transform: uppercase;
-  }
-  div.slide-div > p {
-    color: #000;
-  }
-  div.slide-img {
-    display: flex;
-    width: calc(160px + 2vw);
-    height: calc(160px + 2vw);
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: #151515;
-    /*background-image: url(./assets/images/heaven.JPEG);*/
-  }
-  div.slide-img > span {
-    text-align: center;
-    font-family: "Albra";
-    font-size: 8rem;
-
-    color: #fff;
-  }
-
-  @media (min-width: 1px) and (max-width: 629px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: transparent;
-    }
-  }
-</style>
-
-<!-- Swiper -->
-<div class="title-slides">
-  <h2 class="title-slides">Nosso processo</h2>
-  <h3 class="title-slides">explicado:</h3>
-</div>
-<div class="swiper-wrapper" id="swiper-wrapper-4faae733aef3678f" aria-live="polite">
-  <div class="swiper-slide slide-div swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 416.667px; margin-right: 15px;">
-    <div class="slide-img">
-      <span>1</span>
-    </div>
-    <h3>Entrada</h3>
-    <p>
-      Você escolherá o pacote, e fará o pagamento do valor respectivo ao projeto
-      escolhido. Após isso irá assinar o nosso contrato para garantir o seu
-      projeto.
-    </p>
-  </div>
-
-  <div class="swiper-slide slide-div swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 416.667px; margin-right: 15px;">
-    <div class="slide-img">
-      <span>2</span>
-    </div>
-    <h3>Descoberta</h3>
-    <p>
-      Vamos conversar e você vai me contar mais sobre o seu negócio e seu
-      objetivo com a sua marca.
-    </p>
-  </div>
-
-  <div class="swiper-slide slide-div" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 416.667px; margin-right: 15px;">
-    <div class="slide-img">
-      <span>3</span>
-    </div>
-    <h3>Design</h3>
-    <p>
-      O passo mais emocionante de todos! Sente-se, relaxe e espere seu pacote
-      chegar em sua caixa de entrada
-    </p>
-  </div>
-
-  <div class="swiper-slide slide-div" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 416.667px; margin-right: 15px;">
-    <div class="slide-img">
-      <span>4</span>
-    </div>
-    <h3>Refinamentos</h3>
-    <p>
-      Essa é a sua chance de fazer mudanças na sua marca, com até cinco
-      alterações gratuitas seu feedback garante que atingimos a marca de forma
-      eficiente!
-    </p>
-  </div>
-
-  <div class="swiper-slide slide-div" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 416.667px; margin-right: 15px;">
-    <div class="slide-img">
-      <span>5</span>
-    </div>
-    <h3>Entrega</h3>
-    <p>
-      Assim que finalizarmos o seu projeto, vamos juntar os arquivos em alta
-      resolução e transferi-los para você começar a usar!
-    </p>
-  </div>
-</div>
-
-<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4faae733aef3678f"></div>
-<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4faae733aef3678f"></div>
-<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-<div w3-include-html="./surfaces/footer.html"></div>
-
-    <script>
-      includeHTML();
-      slide();
-    </script>
+        
+			</style>
+          
+          <div id="image-container" class="principal container"></div>
+          <div id="loading-indicator">Carregando...</div>
   
+          <script src="./js/script.js"></script>
+      <!-- Old Version Jobs
+          <div class="principal container">
 
-</body>
+
+
+
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/point-pizzaria.JPG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">Point Pizzaria</h2>
+					</a>
+				</div>
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/pod-falar.JPG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">PodFalar</h2>
+					</a>
+				</div>
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/IMG-6444.JPG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">Booster Social</h2>
+					</a>
+				</div>
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/celeiro.JPG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">Celeiro</h2>
+					</a>
+				</div>
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/midia-social-pacote.JPEG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">Lady Hair</h2>
+					</a>
+				</div>
+				<div class="cards-trabalhos col-lg-5">
+					<a href="#" class="btn">
+						<div class="img-trabalhos">
+							<img
+								src="../assets/images/IMG-2000.JPEG"
+								alt="foto trabalhos"
+								class="principal"
+							/>
+						</div>
+						<h2 class="principal">Angels Fusion</h2>
+					</a>
+				</div>
+			</div>
+      -->
+
+		</div>
+		<div
+			class="swiper mySwiper swiper-initialized swiper-horizontal swiper-android swiper-backface-hidden"
+		>
+			<style>
+				.swiper {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					padding: 0 5rem;
+					margin: 4rem 0;
+				}
+
+				.swiper-slide {
+					text-align: center;
+
+					/* Center slide text vertically */
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					-webkit-align-items: center;
+					align-items: center;
+				}
+
+				.swiper-slide img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					color: #ff037a;
+				}
+
+				@media (min-width: 1px) and (max-width: 1023px) {
+					h3.title-slides {
+						font-size: 3rem !important;
+					}
+
+					h2.title-slides {
+						font-size: 0.9rem !important;
+						transform: translate(0, 70%);
+					}
+				}
+
+				@media (min-width: 1024px) {
+					h3.title-slides {
+						font-size: 4.2rem !important;
+					}
+					h2.title-slides {
+						font-size: 1.5rem !important;
+						transform: translate(0, 30%);
+					}
+				}
+
+				div.title-slides {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 2rem;
+				}
+
+				h2.title-slides {
+					display: inline-block;
+					font-family: 'Lemon Milk';
+					color: #000;
+					font-weight: 500;
+					min-height: 4rem;
+				}
+
+				h3.title-slides {
+					display: block;
+					background-color: transparent;
+					color: #ff037a;
+					font-family: 'Albra';
+					text-transform: capitalize;
+					min-height: 4rem;
+				}
+
+				div.slide-div {
+					display: flex;
+					padding: 0 2.5rem;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				div.slide-div > h3 {
+					margin: 0.8rem 0;
+					color: #ff037a;
+					font-weight: 600;
+					font-family: 'Lemon Milk';
+					text-transform: uppercase;
+				}
+				div.slide-div > p {
+					color: #000;
+				}
+				div.slide-img {
+					display: flex;
+					width: calc(160px + 2vw);
+					height: calc(160px + 2vw);
+
+					justify-content: center;
+					align-items: center;
+
+					background-color: #151515;
+					/*background-image: url(./assets/images/heaven.JPEG);*/
+				}
+				div.slide-img > span {
+					text-align: center;
+					font-family: 'Albra';
+					font-size: 8rem;
+
+					color: #fff;
+				}
+
+				@media (min-width: 1px) and (max-width: 629px) {
+					.swiper-button-next,
+					.swiper-button-prev {
+						color: transparent;
+					}
+				}
+			</style>
+
+			<!-- Swiper -->
+			<div class="title-slides">
+				<h2 class="title-slides">Nosso processo</h2>
+				<h3 class="title-slides">explicado:</h3>
+			</div>
+			<div
+				class="swiper-wrapper"
+				id="swiper-wrapper-4faae733aef3678f"
+				aria-live="polite"
+			>
+				<div
+					class="swiper-slide slide-div swiper-slide-active"
+					role="group"
+					aria-label="1 / 5"
+					data-swiper-slide-index="0"
+					style="width: 416.667px; margin-right: 15px"
+				>
+					<div class="slide-img">
+						<span>1</span>
+					</div>
+					<h3>Entrada</h3>
+					<p>
+						Você escolherá o pacote, e fará o pagamento do valor
+						respectivo ao projeto escolhido. Após isso irá assinar o
+						nosso contrato para garantir o seu projeto.
+					</p>
+				</div>
+
+				<div
+					class="swiper-slide slide-div swiper-slide-next"
+					role="group"
+					aria-label="2 / 5"
+					data-swiper-slide-index="1"
+					style="width: 416.667px; margin-right: 15px"
+				>
+					<div class="slide-img">
+						<span>2</span>
+					</div>
+					<h3>Descoberta</h3>
+					<p>
+						Vamos conversar e você vai me contar mais sobre o seu
+						negócio e seu objetivo com a sua marca.
+					</p>
+				</div>
+
+				<div
+					class="swiper-slide slide-div"
+					role="group"
+					aria-label="3 / 5"
+					data-swiper-slide-index="2"
+					style="width: 416.667px; margin-right: 15px"
+				>
+					<div class="slide-img">
+						<span>3</span>
+					</div>
+					<h3>Design</h3>
+					<p>
+						O passo mais emocionante de todos! Sente-se, relaxe e
+						espere seu pacote chegar em sua caixa de entrada
+					</p>
+				</div>
+
+				<div
+					class="swiper-slide slide-div"
+					role="group"
+					aria-label="4 / 5"
+					data-swiper-slide-index="3"
+					style="width: 416.667px; margin-right: 15px"
+				>
+					<div class="slide-img">
+						<span>4</span>
+					</div>
+					<h3>Refinamentos</h3>
+					<p>
+						Essa é a sua chance de fazer mudanças na sua marca, com
+						até cinco alterações gratuitas seu feedback garante que
+						atingimos a marca de forma eficiente!
+					</p>
+				</div>
+
+				<div
+					class="swiper-slide slide-div"
+					role="group"
+					aria-label="5 / 5"
+					data-swiper-slide-index="4"
+					style="width: 416.667px; margin-right: 15px"
+				>
+					<div class="slide-img">
+						<span>5</span>
+					</div>
+					<h3>Entrega</h3>
+					<p>
+						Assim que finalizarmos o seu projeto, vamos juntar os
+						arquivos em alta resolução e transferi-los para você
+						começar a usar!
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="swiper-button-prev"
+				tabindex="0"
+				role="button"
+				aria-label="Previous slide"
+				aria-controls="swiper-wrapper-4faae733aef3678f"
+			></div>
+			<div
+				class="swiper-button-next"
+				tabindex="0"
+				role="button"
+				aria-label="Next slide"
+				aria-controls="swiper-wrapper-4faae733aef3678f"
+			></div>
+			<span
+				class="swiper-notification"
+				aria-live="assertive"
+				aria-atomic="true"
+			></span
+			><span
+				class="swiper-notification"
+				aria-live="assertive"
+				aria-atomic="true"
+			></span>
+		</div>
+		<div w3-include-html="./surfaces/footer.html"></div>
+
+		<script>
+			includeHTML();
+			slide();
+		</script>
+	</body>
 </html>
