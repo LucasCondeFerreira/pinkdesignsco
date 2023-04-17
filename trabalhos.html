@@ -41,8 +41,8 @@
 		<title>Trabalhos</title>
 	</head>
 	<body cz-shortcut-listen="true">
-		<div w3-include-html="./surfaces/header.html"></div>
-		<div>
+		<div w3-include-html="./surfaces/header.html" class='sticky-top'></div>
+		<div class=''>
 			<!-- Titulo Trabalhos -->
 
 			<style>
@@ -110,66 +110,14 @@
 					div.cards-trabalhos {
 						padding-top: 2rem;
 					}
-
-					div.img-trabalhos {
-						width: 320px;
-						height: 320px;
-					}
-					img.principal {
-						border: 2px solid #ff037a;
-						padding: 0;
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-
-					h2.principal {
-						padding: 1rem 0;
-						font-size: 1.4rem !important;
-						text-align: start;
-						font-family: 'Lemon Milk';
-						text-transform: uppercase;
-						font-weight: 600;
-					}
-				}
-
-				@media (min-width: 581px) and (max-width: 1023px) {
-					div.cards-trabalhos {
-						padding-top: 3rem;
+					div.cards-trabalhos > a {
+						width: 280px;
+						max-width: 280px;
+						height: 280px;
+						max-height: 280px;
 					}
 
 					div.img-trabalhos {
-						width: 360px;
-						height: 360px;
-					}
-					img.principal {
-						border: 2px solid #ff037a;
-						padding: 0;
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-
-					h2.principal {
-						padding: 1rem 0;
-						font-size: 1.4rem !important;
-						text-align: start;
-						font-family: 'Lemon Milk';
-						text-transform: uppercase;
-						font-weight: 600;
-					}
-				}
-
-				@media (min-width: 1024px) {
-					div.cards-trabalhos {
-						padding-top: 6rem;
-					}
-					div.principal :nth-child(odd) {
-						padding-top: 0;
-					}
-					div.img-trabalhos {
-						width: 380px;
-						height: 380px;
 					}
 					img.principal {
 						border: 2px solid #ff037a;
@@ -181,8 +129,100 @@
 
 					h1.principal {
 						padding: 1rem 0;
-						font-size: 1.6rem !important;
+						font-size: 1.4rem !important;
 						text-align: start;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+					div.ver-mais {
+						padding: 1rem 0;
+						font-size: 1rem !important;
+						text-align: end;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+				}
+
+				@media (min-width: 581px) and (max-width: 1023px) {
+					div.cards-trabalhos {
+						padding-top: 3rem;
+					}
+					div.cards-trabalhos > a {
+						width: 280px;
+						max-width: 280px;
+						height: 280px;
+						max-height: 280px;
+					}					
+
+					div.img-trabalhos {
+
+					}
+					img.principal {
+						border: 2px solid #ff037a;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+
+					h1.principal {
+						padding: 1rem 0;
+						font-size: 1.4rem !important;
+						text-align: start;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+					div.ver-mais {
+						padding: 1rem 0;
+						font-size: 1.2rem !important;
+						text-align: end;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+				}
+
+				@media (min-width: 1024px) {
+					div.cards-trabalhos {
+						padding-top: 6rem;
+					}
+					div.cards-trabalhos > a {
+						width: 320px;
+						max-width: 320px;
+						max-height: 320px;
+						height: 320px;
+					}
+					div.principal :nth-child(odd) {
+						padding-top: 0;
+					}
+					div.img-trabalhos {
+					}
+					img.principal {
+						border: 2px solid #ff037a;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+
+					h1.principal {
+						display: flex;
+						justify-content: flex-end;
+						align-items: flex-end;
+						padding: 1rem 0;
+						font-size: 1.6rem !important;
+						text-align: end;
+						font-family: 'Lemon Milk';
+						text-transform: uppercase;
+						font-weight: 600;
+					}
+					div.ver-mais {
+						padding: 1rem 0;
+						font-size: 1.2rem !important;
+						text-align: end;
 						font-family: 'Lemon Milk';
 						text-transform: uppercase;
 						font-weight: 600;

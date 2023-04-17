@@ -27,12 +27,12 @@ function createImageElement(imageData) {
   // Adicionar classe à imagem
   img.classList.add('principal'); // Classe personalizada para a imagem
 
-  // Criar elemento de título
-  const title = document.createElement('h2');
-  title.textContent = imageData.title;
 
-  // Adicionar classe ao título
-  title.classList.add('principal'); // Classe personalizada para o título
+  // Criar elemento de texto "Ver mais >>"
+const verMais = document.createElement('div');
+verMais.textContent = 'Ver mais >>';
+verMais.classList.add('ver-mais'); // Classe personalizada para o texto "Ver mais >>"
+
 
   // Criar elemento de link
   const link = document.createElement('a');
@@ -52,8 +52,12 @@ function createImageElement(imageData) {
       .catch(error => console.error(error));
   });
   
+  link.appendChild(verMais); // Adicionar o texto "Ver mais >>" como filho do link
   link.appendChild(img); // Adicionar imagem como filho do link
-  link.appendChild(title); // Adicionar título como filho do link
+
+
+
+
 
   // Criar container para imagem, título e link
   const container = document.createElement('div');
