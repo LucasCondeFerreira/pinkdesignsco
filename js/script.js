@@ -61,7 +61,7 @@ verMais.classList.add('ver-mais'); // Classe personalizada para o texto "Ver mai
 
   // Criar container para imagem, título e link
   const container = document.createElement('div');
-  container.classList.add('cards-trabalhos', 'col-lg-5'); // Adicionar classes ao container
+  container.classList.add('cards-trabalhos', 'col-lg-5', 'mt-5'); // Adicionar classes ao container
   container.appendChild(link); // Adicionar link como filho do container
 
   // Adicionar container à galeria
