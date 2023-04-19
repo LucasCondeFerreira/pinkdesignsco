@@ -271,7 +271,7 @@ h4.A {
 
 
 div.foto {
-  background-image: url(./assets/images/background-foto.jpg);
+  background-image: url(../images/background-foto.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -403,6 +403,7 @@ img.imagemtwo {
   }
   div.imagemone {
     position: absolute;
+    overflow: hidden;
     max-width: 320px;
     max-height: 320px;
     z-index: 2;
@@ -412,6 +413,7 @@ img.imagemtwo {
   }
   div.imagemtwo {
     position: absolute;
+    overflow: hidden;
     max-width: 320px;
     max-height: 320px;
 
@@ -522,7 +524,7 @@ div.section-mensagem > h1 {
 
 div.imagem-fundo {
   border: 2px solid #ff037a;
-  background-image: url(./assets/images/heaven.JPEG);
+  background-image: url(../images/heaven.JPEG);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,7 +608,7 @@ div.descricao > div > a.btn > span {
 @media (min-width: 1px) and (max-width: 1023px) {
   div.imagem-fundo {
     border: 2px solid #ff037a;
-    background-image: url(./assets/images/heaven.JPEG);
+    background-image: url(../images/heaven.JPEG);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -844,7 +846,7 @@ div.pacote > a.button-info {
 
 div.banner {
   border: 2px solid #ff037a;
-  background-image: url(./assets/images/heaven.JPEG);
+  background-image: url(../images/heaven.JPEG);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
