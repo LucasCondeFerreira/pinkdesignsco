@@ -104,20 +104,36 @@ p {
 @media (min-width: 1px) and (max-width: 767px) {
       /* Estilos para o botão do menu */
 .menu-response {
+  display: flex;
+  flex-direction: column;
   border: none;
   background: transparent;
   cursor: pointer;
+  justify-content: end;
+  align-items: end;
 }
 
 /* Estilos para o ícone do menu (as três barrinhas brancas) */
 .menu-icon {
   display: block;
-  width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #fff;
   margin-bottom: 5px;
   transition: transform 0.3s ease-in-out;
 }
+
+.menu-icon:nth-child(1) {
+  width: 30px;
+}
+
+.menu-icon:nth-child(2) {
+  width: 22px;
+}
+
+.menu-icon:nth-child(3) {
+  width: 16px;
+}
+
 
 /* Estilos para o ícone do menu quando é clicado (vira um "x") */
 .menu-response[aria-expanded="true"] .menu-icon::before,
@@ -125,15 +141,16 @@ p {
   content: "";
   display: block;
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #fff;
   position: absolute;
   top: 0;
   transition: transform 0.3s ease-in-out;
 }
 
+
 .menu-response[aria-expanded="true"] .menu-icon:nth-child(1) {
-  transform: translateY(7px) rotateZ(-45deg);
+  transform: translateY(8px) rotateZ(-45deg);
 }
 
 .menu-response[aria-expanded="true"] .menu-icon:nth-child(2) {
@@ -141,7 +158,8 @@ p {
 }
 
 .menu-response[aria-expanded="true"] .menu-icon:nth-child(3) {
-  transform: translateY(-10px) rotateZ(45deg);
+  width: 30px;
+  transform: translateY(-5px) rotateZ(45deg);
 }
 
   .DivHeader {
