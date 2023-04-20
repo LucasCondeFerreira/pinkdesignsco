@@ -408,12 +408,18 @@ img.imagemtwo {
     max-height: 320px;
     z-index: 2;
 
+        justify-content: center;
+    align-items: center;
+    overflow: hidden;
     top: 13rem;
     left: 13rem;
   }
   div.imagemtwo {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    position: absolute;
     max-width: 320px;
     max-height: 320px;
 
@@ -444,10 +450,17 @@ img.imagemtwo {
     max-height: 160px;
     z-index: 2;
 
+        justify-content: center;
+    align-items: center;
+    overflow: hidden;
     top: 5rem;
     left: 11rem;
   }
   div.imagemtwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     position: absolute;
     max-width: 160px;
     max-height: 160px;
@@ -474,10 +487,17 @@ img.imagemtwo {
     max-height: 220px;
     z-index: 2;
 
+        justify-content: center;
+    align-items: center;
+    overflow: hidden;
     top: 12rem;
     left: 8rem;
   }
   div.imagemtwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     position: absolute;
     max-width: 220px;
     max-height: 220px;
@@ -717,6 +737,10 @@ div.pacote > div > img {
 div.pacote > div {
   border: 2px solid #ff037a;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1023px) {
@@ -730,6 +754,11 @@ div.pacote > div {
 }
 
 @media (min-width: 1024px) {
+  div.pacote > div > img {
+    width: 135%;
+    height: 235px;
+    object-fit: contain;
+  }
   div.pacote {
     padding: 0;
     width: calc(260px + 3.5vw);
@@ -874,6 +903,14 @@ div.banner > div > div > span:nth-child(2) {
   align-items: center;
   text-align: center;
 }
+
+div.banner > div > div > a {
+    border: 2px solid #ff037a;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 @media screen and (min-width: 1024px) {
   div.banner {
     min-height: 420px;
@@ -895,10 +932,9 @@ div.banner > div > div > span:nth-child(2) {
   }
 
   div.banner > div > div > a > img {
-    border: 2px solid #ff037a;
     align-items: flex-end;
-    width: 250px;
-    height: 250px;
+    width: 105%;
+    height: 245px;
     object-fit: contain;
   }
 }
@@ -930,9 +966,8 @@ div.banner > div > div > span:nth-child(2) {
   }
 
   div.banner > div > div > a > img {
-    border: 2px solid #ff037a;
     align-items: center;
-    width: 180px;
+    width: 105%;
     height: 180px;
     object-fit: contain;
   }
@@ -973,661 +1008,6 @@ div.banner > div > div > span:nth-child(2) > h1 {
 }
 
 
-/*************************************
-        Pacotes
-*/
-
-/*******************
-        Secção 1
-*/
-
-
-@media (min-width: 1px) and (max-width: 1023px) {
-  .pacotes-text,
-  .pacotes {
-    color: rgb(252, 252, 252);
-  }
-
-  div.pacotes-text {
-    background-color: #151515;
-    padding: 2rem;
-    padding-top: 4.5rem;
-  }
-
-  h1.pacotes-text {
-    font-size: 3rem !important;
-  }
-
-  h4.pacotes-text {
-    font-family: "Lemon Milk";
-    font-size: 1rem !important;
-    font-weight: 700;
-    display: inline-block;
-    padding: 1rem 0;
-    text-transform: uppercase;
-  }
-
-  div.pacotes-text {
-    align-items: start;
-    justify-content: start;
-    text-align: start;
-  }
-}
-
-@media (min-width: 1024px) {
-  .pacotes-text,
-  .pacotes {
-    color: rgb(252, 252, 252);
-  }
-
-  div.pacotes-text {
-    background-color: #151515;
-    padding: 2rem 5rem;
-    padding-top: 4.5rem;
-  }
-
-  h1.pacotes-text {
-    font-size: 7rem !important;
-  }
-
-  h4.pacotes-text {
-    font-family: "Lemon Milk";
-    font-size: 2rem;
-    font-weight: 700;
-    display: inline-block;
-    padding: 1rem 0;
-    text-transform: uppercase;
-  }
-
-  div.pacotes-text {
-    align-items: start;
-    justify-content: start;
-    text-align: start;
-  }
-}
-
-
-/*******************
-        Secção 2
-*/
-
-
-div.pacotes:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 1px) and (max-width: 1023px) {
-  div.pacotes:nth-child(2) {
-    padding: 1.2rem;
-    padding-top: 5rem;
-  }
-
-  div.pacotes > h3.text-pacotes {
-    display: inline-block;
-    text-align: center;
-    font-size: 1.1rem !important;
-    font-family: "Karla";
-    color: #000;
-  }
-
-  div.pacotes > div.title-pacotes > h1.title-pacotes {
-    width: 50%;
-  }
-
-  section.pacotes > div {
-    padding: 2rem 2rem 5rem 2rem;
-    margin: 2rem 0;
-    width: 85%;
-    border: #000 solid 2px;
-  }
-
-  section.pacotes > div > h2 {
-    font-size: 3rem !important;
-  }
-
-  section.pacotes > div > div > ul > li {
-    color: #000;
-    font-size: 1rem;
-  }
-
-  section.pacotes > div > div > a {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    border: solid 2px #000;
-    margin: 0 auto;
-    margin-top: 1.8rem;
-    padding: 0.9rem 1rem;
-  }
-
-  section.pacotes > div > div > a > span {
-    display: inline-block;
-    margin: 0 auto;
-    font-size: 2.28rem;
-    font-family: "Albra";
-    color: #ff037a;
-  }
-
-  div.pacotes > div.title-pacotes > h2.title-pacotes {
-    font-size: 1.2rem !important;
-    transform: translate(0, 60%);
-  }
-}
-
-@media (min-width: 1024px) {
-  div.pacotes:nth-child(2) {
-    padding: 2rem;
-    padding-top: 5rem;
-  }
-
-  div.pacotes > h3.text-pacotes {
-    display: inline-block;
-    text-align: center;
-    font-family: "Karla";
-    color: #000;
-    width: 60%;
-  }
-
-  div.pacotes > div.title-pacotes > h1.title-pacotes {
-    width: 30%;
-  }
-
-  section.pacotes > div {
-    padding: 3rem 5rem 6rem 5rem;
-    margin: 2rem 25px;
-    border: #000 solid 4px;
-  }
-
-  section.pacotes > div > h2 {
-    font-size: 5rem;
-  }
-
-  section.pacotes > div > div > ul > li {
-    color: #000;
-    font-size: 1.3rem;
-  }
-
-  section.pacotes > div > div > a {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    border: solid 2px #000;
-    margin: 0 auto;
-    margin-top: 1.8rem;
-    padding: 0.9rem 1rem;
-  }
-
-  section.pacotes > div > div > a > span {
-    display: inline-block;
-    margin: 0 auto;
-    font-size: 2rem;
-    font-family: "Albra";
-    color: #ff037a;
-  }
-
-  div.pacotes > div.title-pacotes > h2.title-pacotes {
-    font-size: 2.5rem !important;
-    transform: translate(0, 30%);
-  }
-}
-
-p.desconto {
-  margin: 1.5rem auto !important;
-  text-align: center;
-  width: 60%;
-}
-
-div.pacotes > div.title-pacotes {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transform: translate(0, 30%);
-}
-
-div.pacotes > div.title-pacotes > h2.title-pacotes {
-  display: inline-block;
-  font-family: "Lemon Milk";
-  color: #000;
-  font-weight: 500;
-  min-height: 4rem;
-}
-div.pacotes > div.title-pacotes > h1.title-pacotes {
-  display: block;
-  background-color: #151515;
-  font-family: "Albra";
-  min-height: 4rem;
-  padding: 1rem;
-}
-
-section.pacotes {
-  background-color: #f4f4f4;
-  padding: 8rem 0;
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-}
-
-section.pacotes > div > h5 {
-  font-family: "Lemon Milk";
-  font-weight: 600;
-  color: #000;
-}
-
-section.pacotes > div > h2 {
-  text-transform: capitalize;
-  color: #ff037a;
-}
-
-section.pacotes > div > p {
-}
-
-section.pacotes > div > div > p {
-  margin: 1.5rem 0;
-  color: #000;
-}
-
-
-/*******************
-        Secção 3
-*/
-
-
-div.midias {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-@media (min-width: 1px) and (max-width: 1023px) {
-  section.midias {
-    padding-top: 0rem;
-  }
-  div.midias:nth-child(1) {
-    padding-top: 5rem;
-  }
-  div.midias > div.title-midias > h1.title-midias {
-    width: 60%;
-  }
-
-  section.midias > div {
-    padding: 2rem 2rem 5rem 2rem;
-    margin: 2rem 25px;
-    border: #000 solid 2px;
-  }
-
-  section.midias > div > div > a {
-    width: 90%;
-  }
-
-  section.midias > div > div > ul > li {
-    display: flex;
-    color: #000;
-    font-size: 1rem;
-    width: 100%;
-    margin: 0;
-    margin-top: 5px;
-
-    justify-content: space-between;
-  }
-
-  section.midias > div > div > ul > li > span:nth-child(1) {
-    color: #000;
-    font-size: 1rem;
-  }
-
-  section.midias > div > div > ul > li > span > a {
-    color: #ff037a;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 10px 15px;
-    min-width: 110px;
-    max-height: 65px;
-    border: solid 2.2px #000;
-  }
-
-  a.btn-midia {
-    display: none !important;
-  }
-
-  section.midias > div > h2 {
-    font-size: 3rem !important;
-  }
-
-  div.midias > div.title-midias > h2.title-midias {
-    font-size: 1.2rem !important;
-    transform: translate(0, 60%);
-  }
-}
-
-@media (min-width: 1024px) {
-  section.midias {
-    padding-top: 8rem;
-  }
-
-  div.midias:nth-child(1) {
-    padding-top: 5rem;
-  }
-
-  div.midias > div.title-midias > h1.title-midias {
-    width: 50%;
-  }
-
-  section.midias > div {
-    padding: 3rem 5rem 6rem 5rem;
-    margin: 2rem 0;
-    border: #000 solid 4px;
-  }
-
-  section.midias > div > div > a {
-    width: 60%;
-  }
-  a.btn-midia {
-    display: none !important;
-  }
-
-  section.midias > div > div > ul > li {
-    display: flex;
-    color: #000;
-    font-size: 1.3rem;
-    width: 90%;
-    margin-top: 1rem;
-
-    justify-content: space-between;
-  }
-
-  section.midias > div > div > ul > li > span:nth-child(1) {
-    color: #000;
-    font-size: 1.5rem;
-  }
-
-  section.midias > div > div > ul > li > span > a {
-    color: #ff037a;
-    font-size: 1.7rem;
-    text-decoration: none;
-    padding: 10px 15px;
-    min-width: 154px;
-    max-height: 65px;
-    border: solid 2.2px #000;
-  }
-
-  section.midias > div > h2 {
-    font-size: 3.4rem !important;
-  }
-
-  div.midias > div.title-midias > h2.title-midias {
-    font-size: 2.5rem !important;
-    transform: translate(0, 30%);
-  }
-}
-
-div.midias > p.text-midias {
-  color: #000;
-  width: 80%;
-}
-
-div.midias:nth-child(1) {
-  display: flex;
-  padding: 2rem;
-}
-div.midias > div.title-midias {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transform: translate(0, -70%);
-}
-
-div.midias > div.title-midias > h2.title-midias {
-  display: inline-block;
-  font-family: "Lemon Milk";
-  color: #000;
-  font-weight: 500;
-  min-height: 4rem;
-}
-
-div.midias > div.title-midias > h1.title-midias {
-  display: block;
-  background-color: #151515;
-  color: #fff;
-  min-height: 4rem;
-  padding: 1rem;
-}
-
-section.midias {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-around;
-}
-
-section.midias > div > h5 {
-  font-family: "Lemon Milk";
-  font-weight: 600;
-  color: #000;
-}
-
-section.midias > div > h2 {
-  text-transform: capitalize;
-  color: #ff037a;
-}
-
-section.midias > div > p {
-}
-
-section.midias > div {
-  background-color: #f4f4f4;
-}
-
-section.midias > div > div > p {
-  margin: 1.5rem 0;
-  color: #000;
-}
-
-section.midias > div > div > ul {
-  color: #000;
-  width: 100%;
-  padding: 0;
-}
-
-section.midias > div > div > a {
-  display: flex;
-  justify-content: center;
-  border: solid 2px #000;
-  margin: 0 auto;
-  margin-top: 1.8rem;
-  padding: 0.9rem 1rem;
-}
-
-section.midias > div > div > a > span {
-  display: inline-block;
-  margin: 0 auto;
-  font-size: 2rem;
-  font-family: "Albra";
-  color: #ff037a;
-}
-
-
-/*******************
-        Secção 4
-*/
-
-
-div.servicos > div.title-servicos {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transform: translate(0, 10%);
-}
-
-@media (min-width: 1px) and (max-width: 1023px) {
-  div.servicos > div.title-servicos {
-    transform: translate(0, 15%);
-  }
-
-  div.servicos > div.title-servicos > h1.title-servicos {
-    width: 50%;
-  }
-
-  section.servicos > div {
-    padding: 1rem 1rem 3rem 1rem;
-    border: #000 solid 2px;
-  }
-
-  section.servicos > div > div {
-    padding: 1rem 1rem 3rem 1rem;
-    border: #000 solid 2px;
-  }
-
-  section.servicos > div > div {
-    font-size: 3rem !important;
-    color: #ff037a;
-  }
-
-  section.servicos > div > div > h1 {
-    font-size: 3rem !important;
-    color: #ff037a;
-  }
-  section.servicos > div > div > h4 {
-    font-size: 1rem !important;
-  }
-
-  section.servicos > div > div > div > div > ul > li {
-    font-size: 1rem;
-  }
-
-  section.servicos > div > div > div > a {
-    width: 90%;
-  }
-
-  section.servicos > div > div > div > a > span {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  div.servicos > div.title-servicos > h1.title-servicos {
-    width: 30%;
-  }
-
-  section.servicos > div {
-    border: #000 solid 4px;
-  }
-
-  section.servicos > div > div {
-    padding: 3rem 5rem 6rem 5rem;
-    border: #000 solid 4px;
-  }
-
-  section.servicos > div > div > h1 {
-    font-size: 7rem !important;
-  }
-
-  section.servicos > div > div > div > div > ul > li {
-    font-size: 1.3rem;
-  }
-
-  section.servicos > div > div > div > a {
-    width: 50%;
-  }
-
-  section.servicos > div > div > div > a > span {
-    font-size: 2.5rem;
-  }
-}
-div.servicos > div.title-servicos > h1.title-servicos {
-  display: block;
-  background-color: #151515;
-  color: #fff;
-  min-height: 4rem;
-  padding: 1rem;
-}
-
-section.servicos {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section.servicos > div {
-  padding: 1rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section.servicos > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0;
-  width: 100%;
-}
-
-section.servicos > div > div > h1 {
-  text-transform: capitalize;
-  color: #ff037a;
-}
-
-section.servicos > div > div > h4 {
-  font-family: "Lemon Milk";
-  font-weight: 600;
-  color: #000;
-}
-
-section.servicos > div > div > p {
-}
-
-section.servicos > div > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-section.servicos > div > div > div > p {
-  margin: 1.5rem 0;
-  color: #000;
-}
-
-section.servicos > div > div > div > div {
-}
-
-section.servicos > div > div > div > div > ul {
-  color: #000;
-}
-
-section.servicos > div > div > div > div > ul > li {
-  color: #000;
-  text-align: center;
-  list-style: none;
-}
-
-section.servicos > div > div > div > a {
-  display: flex;
-  justify-content: center;
-  border: solid 2px #000;
-  margin: 0 auto;
-  margin-top: 1.8rem;
-  padding: 0.9rem 3.5rem;
-}
-
-section.servicos > div > div > div > a > span {
-  display: inline-block;
-  margin: 0 auto;
-  font-family: "Albra";
-  color: #ff037a;
-}
 
 /*************************************
         Termos
