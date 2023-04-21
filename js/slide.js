@@ -53,7 +53,8 @@ function slide() {
     } else if (width >= 1 && width <= 359) {
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 70,
+        spaceBetween: 40,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
