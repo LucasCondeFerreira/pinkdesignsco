@@ -37,7 +37,7 @@ h6 {
   max-width: 100vw;
 }
 .pink {
-  color: #ff037a;
+  color: #e60261;
 }
 @media (min-width: 1024px) {
   h1 {
@@ -325,7 +325,7 @@ div.containtext {
 
 div.containtext > h1 {
   padding: 1.2rem 0;
-  color: #ff037a;
+  color: #e60261;
 }
 
 div.containtext > p {
@@ -357,7 +357,7 @@ div.text {
 }
 
 div.text > h2 {
-  color: #ff037a;
+  color: #e60261;
   text-align: start;
   padding: 1.2rem 0;
 }
@@ -543,7 +543,7 @@ div.section-mensagem > h1 {
 
 
 div.imagem-fundo {
-  border: 2px solid #ff037a;
+  border: 2px solid #e60261;
   background-image: url(../images/heaven.JPEG);
   background-position: top center;
   background-repeat: no-repeat;
@@ -579,7 +579,7 @@ div.descricao-title > span > h1 {
 
 div.descricao-title > h1 {
   margin-top: 1rem;
-  color: #ff037a;
+  color: #e60261;
 }
 
 div.container-descricao {
@@ -597,7 +597,7 @@ div.descricao > h4 {
 }
 div.descricao > h2 {
   margin-top: 0.3rem;
-  color: #ff037a;
+  color: #e60261;
 }
 div.descricao > p {
   margin-top: 0.3rem;
@@ -627,7 +627,7 @@ div.descricao > div > a.btn > span {
 }
 @media (min-width: 1px) and (max-width: 1023px) {
   div.imagem-fundo {
-    border: 2px solid #ff037a;
+    border: 2px solid #e60261;
     background-image: url(../images/heaven.JPEG);
     background-position: top center;
     background-repeat: no-repeat;
@@ -723,7 +723,7 @@ a.button-rotate {
   top: 13rem;
   left: calc(0px - 4vw);
 
-  border: 1px #ff037a solid;
+  border: 1px #e60261 solid;
   border-radius: 50px;
 
   transform: rotate(-90deg);
@@ -735,7 +735,7 @@ div.pacote > div > img {
   object-fit: contain;
 }
 div.pacote > div {
-  border: 2px solid #ff037a;
+  border: 2px solid #e60261;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -775,7 +775,7 @@ a.button-rotate > h2 {
   margin-top: 1.2rem;
 
   font-size: 2.8rem;
-  color: #ff037a;
+  color: #e60261;
   text-align: center;
   align-items: center;
 }
@@ -874,7 +874,7 @@ div.pacote > a.button-info {
 
 
 div.banner {
-  border: 2px solid #ff037a;
+  border: 2px solid #e60261;
   background-image: url(../images/heaven.JPEG);
   background-position: top center;
   background-repeat: no-repeat;
@@ -905,7 +905,7 @@ div.banner > div > div > span:nth-child(2) {
 }
 
 div.banner > div > div > a {
-    border: 2px solid #ff037a;
+    border: 2px solid #e60261;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -1004,7 +1004,7 @@ div.banner > div > div > a {
 
 div.banner > div > div > span:nth-child(2) > h1 {
   font-size: 6rem;
-  color: #ff037a;
+  color: #e60261;
 }
 
 
@@ -1186,7 +1186,7 @@ div.termos > p {
   div.img-trabalhos {
   }
   img.principal {
-    border: 2px solid #ff037a;
+    border: 2px solid #e60261;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -1226,7 +1226,7 @@ div.termos > p {
 
   }
   img.principal {
-    border: 2px solid #ff037a;
+    border: 2px solid #e60261;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -1267,7 +1267,7 @@ div.termos > p {
   div.img-trabalhos {
   }
   img.principal {
-    border: 2px solid #ff037a;
+    border: 2px solid #e60261;
     padding: 0;
     width: 100%;
     height: 100%;

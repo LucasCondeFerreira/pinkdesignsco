@@ -34,7 +34,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: #ff037a;
+    color: #e60261;
   }
 
   @media (min-width: 1px) and (max-width: 1023px) {
@@ -78,7 +78,7 @@
   h3.title-slides {
     display: block;
     background-color: transparent;
-    color: #ff037a;
+    color: #e60261;
     font-family: "Albra";
     text-transform: capitalize;
     min-height: 4rem;
@@ -93,7 +93,7 @@
   }
   div.slide-div > h3 {
     margin: 0.8rem 0;
-    color: #ff037a;
+    color: #e60261;
     font-weight: 600;
     font-family: "Lemon Milk";
     text-transform: uppercase;
@@ -109,8 +109,8 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #151515;
-    /*background-image: url(./assets/images/heaven.webp);*/
+    background-color: #e60261;
+    /*background-image: url(./assets/images/heaven.JPEG);*/
   }
   div.slide-img > span {
     text-align: center;
@@ -129,70 +129,68 @@
 </style>
 
 <!-- Swiper -->
-<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-  <!-- Swiper -->
-  <div class="title-slides">
-    <h2 class="title-slides">Nosso processo</h2>
-    <h3 class="title-slides">explicado:</h3>
+<div class="title-slides">
+  <h2 class="title-slides">Nosso processo</h2>
+  <h3 class="title-slides">explicado:</h3>
+</div>
+<div class="swiper-wrapper">
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>1</span>
+    </div>
+    <h3>Entrada</h3>
+    <p>
+      Você escolherá o pacote, e fará o pagamento do valor respectivo ao projeto
+      escolhido. Após isso irá assinar o nosso contrato para garantir o seu
+      projeto.
+    </p>
   </div>
-  <div class="swiper-wrapper">
-    <div class="swiper-slide slide-div swiper-slide-active">
-      <div class="slide-img">
-        <span>1</span>
-      </div>
-      <h3>Entrada</h3>
-      <p>
-        Você escolherá o pacote, e fará o pagamento do valor respectivo ao projeto
-        escolhido. Após isso irá assinar o nosso contrato para garantir o seu
-        projeto.
-      </p>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>2</span>
     </div>
-  
-    <div class="swiper-slide slide-div swiper-slide-next">
-      <div class="slide-img">
-        <span>2</span>
-      </div>
-      <h3>Descoberta</h3>
-      <p>
-        Vamos conversar e você vai me contar mais sobre o seu negócio e seu
-        objetivo com a sua marca.
-      </p>
-    </div>
-  
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>3</span>
-      </div>
-      <h3>Design</h3>
-      <p>
-        O passo mais emocionante de todos! Sente-se, relaxe e espere seu pacote
-        chegar em sua caixa de entrada
-      </p>
-    </div>
-  
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>4</span>
-      </div>
-      <h3>Refinamentos</h3>
-      <p>
-        Essa é a sua chance de fazer mudanças na sua marca, com até cinco
-        alterações gratuitas seu feedback garante que atingimos a marca de forma
-        eficiente!
-      </p>
-    </div>
-  
-    <div class="swiper-slide slide-div">
-      <div class="slide-img">
-        <span>5</span>
-      </div>
-      <h3>Entrega</h3>
-      <p>
-        Assim que finalizarmos o seu projeto, vamos juntar os arquivos em alta
-        resolução e transferi-los para você começar a usar!
-      </p>
-    </div>
+    <h3>Descoberta</h3>
+    <p>
+      Vamos conversar e você vai me contar mais sobre o seu negócio e seu
+      objetivo com a sua marca.
+    </p>
   </div>
-  
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>3</span>
+    </div>
+    <h3>Design</h3>
+    <p>
+      O passo mais emocionante de todos! Sente-se, relaxe e espere seu pacote
+      chegar em sua caixa de entrada
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>4</span>
+    </div>
+    <h3>Refinamentos</h3>
+    <p>
+      Essa é a sua chance de fazer mudanças na sua marca, com até cinco
+      alterações gratuitas seu feedback garante que atingimos a marca de forma
+      eficiente!
+    </p>
+  </div>
+
+  <div class="swiper-slide slide-div">
+    <div class="slide-img">
+      <span>5</span>
+    </div>
+    <h3>Entrega</h3>
+    <p>
+      Assim que finalizarmos o seu projeto, vamos juntar os arquivos em alta
+      resolução e transferi-los para você começar a usar!
+    </p>
+  </div>
+</div>
+
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
