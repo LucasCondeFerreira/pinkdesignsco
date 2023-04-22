@@ -35,6 +35,8 @@ h6 {
 }
 .row {
   max-width: 100vw;
+  --bs-gutter-x: 0 !important; 
+  --bs-gutter-y: 0;
 }
 .pink {
   color: #e60261;
