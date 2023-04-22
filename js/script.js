@@ -74,20 +74,20 @@ function createImageElement(imageData) {
 	// Configurar o link de destino com base na propriedade 'destino' da imagem
 	switch (imageData.destino) {
 		case 'destino1':
-			link.href = '/destinos/destino1.html?id=' + imageData.id; // Link para o destino1.html
+			link.href = '/destino1.html?id=' + imageData.id; // Link para o destino1.html
 			break;
 		case 'destino2':
-			link.href = '/destinos/destino2.html?id=' + imageData.id; // Link para o destino2.html
+			link.href = '/destino2.html?id=' + imageData.id; // Link para o destino2.html
 			break;
 		case 'destino3':
-			link.href = '/destinos/destino3.html?id=' + imageData.id; // Link para o destino3.html
+			link.href = '/destino3.html?id=' + imageData.id; // Link para o destino3.html
 			break;
 		case 'destino6':
-			link.href = '/destinos/destino6.html?id=' + imageData.id; // Link para o destino3.html
+			link.href = '/destino6.html?id=' + imageData.id; // Link para o destino3.html
 			break;
 		// ... adicionar mais casos para outros destinos ...
 		default:
-			link.href = '/destinos/destino.html?id=' + imageData.id; // Link padrão se não houver destino definido
+			link.href = '/destino.html?id=' + imageData.id; // Link padrão se não houver destino definido
 			break;
 	}
 
