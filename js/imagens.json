@@ -1,4 +1,21 @@
 [
+    {
+    "id": 7,
+    "src": "./assets/images/juice/juice-6.webp",
+    "title": "Animalia",
+    "link": "#",
+    "texto1": "Texto Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1Texto 1 da imagem 1 1 da imagem 1",
+    "texto2": "Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1Texto 2 da imagem 1",
+    "imagens": [
+      { "id": 1, "src": "./assets/images/juice/juice-1.webp", "alt": "Imagem 1-1" },
+      { "id": 2, "src": "./assets/images/juice/juice-2.webp", "alt": "Imagem 1-2" },
+      { "id": 3, "src": "./assets/images/juice/juice-3.webp", "alt": "Imagem 1-3" },
+      { "id": 4, "src": "./assets/images/juice/juice-4.webp", "alt": "Imagem 1-4" },
+      { "id": 5, "src": "./assets/images/juice/juice-5.webp", "alt": "Imagem 1-5" },
+      { "id": 6, "src": "./assets/images/juice/juice-6.webp", "alt": "Imagem 1-6" },
+      { "id": 7, "src": "./assets/images/juice/juice-7.webp", "alt": "Imagem 1-7" }
+    ]
+  },
   {
     "id": 6,
     "src": "./assets/images/glace_gourmet/glace_gourmet-6.webp",

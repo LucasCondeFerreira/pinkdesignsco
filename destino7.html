@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Link static style sheet -->
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+
+		<!-- Link custom style sheet -->
+		<link rel="stylesheet" href="./assets/styles/custom.css" />
+
+		<!-- Link custom Js script -->
+		<script src="./js/index.js"></script>
+		<script src="./js/slide.js"></script>
+
+
+		<!-- Bootstrap script -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<!-- Font Awesome script -->
+
+		<script
+			src="https://kit.fontawesome.com/9efff873bb.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>Detalhes da Imagem</title>
+		<style>
+			.row > * {
+				padding-right: 4px;
+				padding-left: 4px;
+			}
+			.width-max {
+				width: 100%;
+				height: 100%;
+			}
+
+			.Destino {
+				color: rgb(252, 252, 252);
+			}
+			@media (min-width: 1px) and (max-width: 1023px) {
+				div.Destino {
+					background-color: #151515;
+					padding: 2rem;
+					padding-top: 4.5rem;
+					align-items: start;
+					justify-content: start;
+					text-align: start;
+				}
+
+				h1.Destino {
+					font-size: 3rem !important;
+				}
+
+				h4.Destino {
+					font-family: 'Lemon Milk';
+					font-size: 1rem !important;
+					font-weight: 700;
+					display: inline-block;
+					padding: 1rem 0;
+					text-transform: uppercase;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				div.Destino {
+					background-color: #151515;
+					padding: 2rem 5rem;
+					padding-top: 4.5rem;
+					align-items: start;
+					justify-content: start;
+					text-align: start;
+				}
+
+				h1.Destino {
+					font-size: 4.6rem !important;
+				}
+
+				h4.Destino {
+					font-family: 'Lemon Milk';
+					font-size: 2rem;
+					font-weight: 700;
+					display: inline-block;
+					padding: 1rem 0;
+					text-transform: uppercase;
+				}
+			}
+		</style>
+	</head>
+	<body class="col-12 p-0">
+		<div w3-include-html="./surfaces/header.html" class='sticky-top'></div>
+		<div>
+			<!-- Titulo Destino -->
+			<div class="Destino col-md-12">
+				<h1 class="Destino">Confira aqui</h1>
+				<h1 class="Destino">O meu portfólio</h1>
+			</div>
+		</div>
+
+		<div class="col-12 mt-2 p-2">
+			<div class="container-fluid mt-5 col-12 justify-content-center">
+				<div class="col-12 mt-2">
+					<img id="img1" src="" alt="" class="img-fluid width-max" />
+				</div>
+				<div class="container mt-4 col-12 col-md-7">
+					<p id="texto1"></p>
+				</div>
+
+				<div class="col-12 mt-4 row flex-wrap">
+					<div class="col-6 mt-2">
+						<img
+							id="img2"
+							src=""
+							class="img-fluid width-max"
+							alt=""
+						/>
+					</div>
+					<div class="col-6 mt-2">
+						<img
+							id="img3"
+							src=""
+							class="img-fluid width-max"
+							alt=""
+						/>
+					</div>
+					<div class="col-6 mt-2">
+						<img
+							id="img4"
+							src=""
+							class="img-fluid width-max"
+							alt=""
+						/>
+					</div>
+					<div class="col-6 mt-2">
+						<img
+							id="img5"
+							src=""
+							class="img-fluid width-max"
+							alt=""
+						/>
+					</div>
+				</div>
+
+				<div class="col-12 mt-4">
+					<img id="img6" src="" alt="" class="img-fluid width-max" />
+				</div>
+				<div class="col-12 mt-4">
+					<img id="img7" src="" alt="" class="img-fluid width-max" />
+				</div>
+
+
+				<div class="container mt-4 col-12">
+					<p id="texto2"></p>
+				</div>
+			</div>
+			<script>
+				includeHTML();
+				slide();
+			</script>
+			<script src='./js/destino.js'></script>
+		</div>
+		<div w3-include-html="./surfaces/footer.html"></div>
+	</body>
+</html>

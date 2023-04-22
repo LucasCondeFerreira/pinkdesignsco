@@ -1,6 +1,13 @@
 // Dados das imagens
 const images = [
 	{
+		id: 7,
+		src: '../assets/images/juice/juice-6.webp',
+		title: 'Juice',
+		link: '#',
+		destino: 'destino7',
+	},
+	{
 		id: 6,
 		src: '../assets/images/glace_gourmet/glace_gourmet-6.webp',
 		title: 'Glace Gourmet',
@@ -76,14 +83,11 @@ function createImageElement(imageData) {
 		case 'destino1':
 			link.href = '/destino1.html?id=' + imageData.id; // Link para o destino1.html
 			break;
-		case 'destino2':
-			link.href = '/destino2.html?id=' + imageData.id; // Link para o destino2.html
-			break;
-		case 'destino3':
-			link.href = '/destino3.html?id=' + imageData.id; // Link para o destino3.html
-			break;
 		case 'destino6':
 			link.href = '/destino6.html?id=' + imageData.id; // Link para o destino3.html
+			break;
+		case 'destino7':
+			link.href = '/destino7.html?id=' + imageData.id; // Link para o destino3.html
 			break;
 		// ... adicionar mais casos para outros destinos ...
 		default:
