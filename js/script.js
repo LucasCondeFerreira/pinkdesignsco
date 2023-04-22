@@ -1,6 +1,13 @@
 // Dados das imagens
 const images = [
 	{
+		id: 8,
+		src: '../assets/images/botox_in/botox_in-1.webp',
+		title: 'Botox in',
+		link: '#',
+		destino: 'destino8',
+	},
+		{
 		id: 7,
 		src: '../assets/images/juice/juice-6.webp',
 		title: 'Juice',
@@ -88,6 +95,9 @@ function createImageElement(imageData) {
 			break;
 		case 'destino7':
 			link.href = '/destino7.html?id=' + imageData.id; // Link para o destino3.html
+			break;
+		case 'destino8':
+			link.href = '/destino8.html?id=' + imageData.id; // Link para o destino3.html
 			break;
 		// ... adicionar mais casos para outros destinos ...
 		default:
