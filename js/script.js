@@ -7,9 +7,9 @@ const images = [
 		link: '#',
 		destino: 'destino8',
 	},
-		{
+	{
 		id: 7,
-		src: '../assets/images/juice/juice-6.webp',
+		src: '../assets/images/juice/juice-1.webp',
 		title: 'Juice',
 		link: '#',
 		destino: 'destino7',
@@ -23,35 +23,35 @@ const images = [
 	},
 	{
 		id: 5,
-		src: '../assets/images/Animalia/animalia-9.webp',
+		src: '../assets/images/Animalia/animalia-1.webp',
 		title: 'Animalia',
 		link: '#',
 		destino: 'destino',
 	},
 	{
 		id: 4,
-		src: '../assets/images/bah_burguer/bah_burguer-10.webp',
+		src: '../assets/images/bah_burguer/bah_burguer-1.webp',
 		title: 'Bah Burguer',
 		link: '#',
 		destino: '',
 	},
 	{
 		id: 3,
-		src: '../assets/images/focus_school/focus_school-4.webp',
+		src: '../assets/images/focus_school/focus_school-8.webp',
 		title: 'Focus School',
 		link: '#',
 		destino: '',
 	},
 	{
 		id: 2,
-		src: '../assets/images/Mamma_Mia/mamma_mia-3.webp',
+		src: '../assets/images/Mamma_Mia/mamma_mia-1.webp',
 		title: 'Mamma Mia',
 		link: '#',
 		destino: '',
 	},
 	{
 		id: 1,
-		src: '../assets/images/movimento_bem_estar/academia-1.webp',
+		src: '../assets/images/movimento_bem_estar/academia-4.webp',
 		title: 'Movimento Bem Estar',
 		link: '#',
 		destino: '',
@@ -77,9 +77,20 @@ function createImageElement(imageData) {
 	// Adicionar classe à imagem
 	img.classList.add('principal'); // Classe personalizada para a imagem
 
+	// Criar nova div
+	const novaDiv = document.createElement('div');
+
 	// Criar elemento de texto "Ver mais >>"
-	const verMais = document.createElement('div');
+	const verMais = document.createElement('h4');
 	verMais.textContent = 'Ver mais >>';
+
+	// Adicionar classe personalizada para o texto "Ver mais >>"
+	verMais.classList.add('ver-mais');
+	novaDiv.classList.add('ver-mais');
+
+	// Adicionar o elemento h3 à nova div
+	novaDiv.appendChild(verMais);
+
 	verMais.classList.add('ver-mais'); // Classe personalizada para o texto "Ver mais >>"
 
 	// Criar elemento de link
@@ -126,7 +137,7 @@ function createImageElement(imageData) {
 			.catch((error) => console.error(error));
 	});
 
-	link.appendChild(verMais); // Adicionar o texto "Ver mais >>" como filho do link
+	link.appendChild(novaDiv); // Adicionar o texto "Ver mais >>" como filho do link
 	link.appendChild(img); // Adicionar imagem como filho do link
 
 	// Criar container para imagem, título e link
