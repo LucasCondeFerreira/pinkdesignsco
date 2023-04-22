@@ -852,7 +852,6 @@ div.pacote > a.button-info {
   div.row-pacote {
     width: 100%;
     min-height: 600px;
-    margin-left: 12px;
   }
   div.pacote {
     display: flex;
