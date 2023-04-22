@@ -824,6 +824,10 @@ div.darken:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+img.image-pb {
+  filter: grayscale(100%);
+}
+
 div.pacote > a.button-info {
   display: block;
   width: 100%;
