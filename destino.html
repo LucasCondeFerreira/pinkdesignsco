@@ -38,6 +38,7 @@
 			crossorigin="anonymous"
 		></script>
 
+
 		<title>Detalhes da Imagem</title>
 		<style>
 			.row > * {
@@ -46,6 +47,7 @@
 			}
 			.width-max {
 				width: 100%;
+				height: 100%;
 			}
 
 			.Destino {
@@ -110,16 +112,16 @@
 			</div>
 		</div>
 
-		<div class="col-12 p-2">
+		<div class="col-12 mt-2 p-2">
 			<div class="container-fluid mt-5 col-12 justify-content-center">
-				<div class="col-12">
+				<div class="col-12 mt-2">
 					<img id="img1" src="" alt="" class="img-fluid width-max" />
 				</div>
 				<div class="container mt-4 col-7">
 					<p id="texto1"></p>
 				</div>
 				<div class="mt-4 col-12 row flex-row py-3 flex-nowrap">
-					<div class="col-3">
+					<div class="col-3 mt-2">
 						<img
 							id="img2"
 							src=""
@@ -127,7 +129,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-3 mt-2">
 						<img
 							id="img3"
 							src=""
@@ -135,7 +137,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-3 mt-2">
 						<img
 							id="img4"
 							src=""
@@ -143,7 +145,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-3 mt-2">
 						<img
 							id="img5"
 							src=""
@@ -153,7 +155,7 @@
 					</div>
 				</div>
 				<div class="col-12 mt-4 row flex-nowrap">
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img6"
 							src=""
@@ -161,7 +163,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img7"
 							src=""
@@ -172,7 +174,7 @@
 				</div>
 
 				<div class="col-12 mt-4 row flex-nowrap">
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img8"
 							src=""
@@ -180,7 +182,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img9"
 							src=""
@@ -195,7 +197,7 @@
 				</div>
 
 				<div class="col-12 mt-4 row flex-nowrap">
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img11"
 							src=""
@@ -203,7 +205,7 @@
 							alt=""
 						/>
 					</div>
-					<div class="col-6">
+					<div class="col-6 mt-2">
 						<img
 							id="img12"
 							src=""
@@ -227,10 +229,12 @@
 				</div>
 			</div>
 			<script>
+			imageUrl = "./assets/images/logo-header.webp";
 				includeHTML();
 				slide();
 			</script>
-			<script src='/js/destino.js'></script>
+			<script src='./js/destino.js'></script>
+			
 		</div>
 		<div w3-include-html="./surfaces/footer.html"></div>
 	</body>

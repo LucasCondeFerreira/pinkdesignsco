@@ -271,7 +271,7 @@ h4.A {
 
 
 div.foto {
-  background-image: url(../images/background-foto.jpg);
+  background-image: url(../images/background-foto.webp);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -544,7 +544,7 @@ div.section-mensagem > h1 {
 
 div.imagem-fundo {
   border: 2px solid #e60261;
-  background-image: url(../images/heaven.JPEG);
+  background-image: url(../images/heaven.webp);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -628,7 +628,7 @@ div.descricao > div > a.btn > span {
 @media (min-width: 1px) and (max-width: 1023px) {
   div.imagem-fundo {
     border: 2px solid #e60261;
-    background-image: url(../images/heaven.JPEG);
+    background-image: url(../images/heaven.webp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

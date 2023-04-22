@@ -1,13 +1,13 @@
-![Logo](./assets/images/logo-pink-design.png)
+![Logo](./assets/images/logo-pink-design.webp)
 
 ## Screenshots
 
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-03.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-12.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-18.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-23.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-40.png)
-![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-59-14.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-03.webp)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-12.webp)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-18.webp)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-23.webp)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-58-40.webp)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-10-28%2018-59-14.webp)
 
 # Site Institucional Pink Designs
 

@@ -5,6 +5,7 @@ function replaceImagesWithJsonData(data) {
     if (img) {
       img.src = data[i].src;
       img.alt = data[i].alt;
+      img.setAttribute("data-src", data[i].src); // Adicionar o atributo "data-src"
     }
   }
 }
@@ -49,3 +50,24 @@ function showImageDetails() {
 
 // Chamar a função para exibir os detalhes da imagem ao carregar a página
 window.onload = showImageDetails;
+
+// Seleciona todas as imagens
+var images = document.querySelectorAll("img");
+
+// Loop para percorrer todas as imagens
+for (var i = 0; i < images.length; i++) {
+  var image = images[i];
+
+  // Verifica se a imagem não tem um atributo "src" ou se o "src" está vazio ou com espaço em branco
+  if (!image.hasAttribute("src") || image.getAttribute("src") === "" || image.getAttribute("src").trim() === "#") {
+    // Verifica se o atributo "src" foi adicionado dinamicamente e se a imagem não possui o atributo "data-src"
+    if (!image.getAttribute("data-src")) {
+      // Remove a imagem após 6 segundos
+      setTimeout(function(imageToRemove) {
+        if (!imageToRemove.hasAttribute("data-src")) { // Verifica novamente se o atributo "data-src" não foi adicionado dinamicamente
+          imageToRemove.parentNode.removeChild(imageToRemove);
+        }
+      }, 3000, image);
+    }
+  }
+}

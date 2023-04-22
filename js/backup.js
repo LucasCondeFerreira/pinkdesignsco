@@ -1,11 +1,11 @@
 // Dados das imagens
 const images = [
-    { src: '../assets/images/point-pizzaria.JPG', title: 'Point Pizzaria', link: '#' },
-    { src: '../assets/images/pod-falar.JPG', title: 'PodFalar', link: '#' },
-    { src: '../assets/images/IMG-6444.JPG', title: 'Booster Social', link: '#' },
-    { src: '../assets/images/celeiro.JPG', title: 'Celeiro', link: '#' },
-    { src: '../assets/images/midia-social-pacote.JPEG', title: 'Lady Hair', link: '#' },
-    { src: '../assets/images/IMG-2000.JPEG', title: 'Angels Fusion', link: '#' },
+    { src: '../assets/images/point-pizzaria.webp', title: 'Point Pizzaria', link: '#' },
+    { src: '../assets/images/pod-falar.webp', title: 'PodFalar', link: '#' },
+    { src: '../assets/images/IMG-6444.webp', title: 'Booster Social', link: '#' },
+    { src: '../assets/images/celeiro.webp', title: 'Celeiro', link: '#' },
+    { src: '../assets/images/midia-social-pacote.webp', title: 'Lady Hair', link: '#' },
+    { src: '../assets/images/IMG-2000.webp', title: 'Angels Fusion', link: '#' },
     // adicione mais objetos de imagem aqui, se necessário
   ];
 
