@@ -872,10 +872,9 @@ div.pacote > a.button-info {
     Secção 7
 */
 
-
 div.banner {
   border: 2px solid #e60261;
-  background-image: url(../images/heaven.JPEG);
+  background-image: url(./assets/images/heaven.webp);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -889,7 +888,7 @@ div.banner > div > div > span:nth-child(1) {
   padding: 1.5rem;
   align-items: center;
   text-align: center;
-  background-color: #151515;
+  background-color: #e60261;
 }
 
 div.banner > div > div > span:nth-child(1) > h1 {
@@ -902,14 +901,6 @@ div.banner > div > div > span:nth-child(2) {
   display: block;
   align-items: center;
   text-align: center;
-}
-
-div.banner > div > div > a {
-    border: 2px solid #e60261;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   div.banner {
@@ -932,9 +923,10 @@ div.banner > div > div > a {
   }
 
   div.banner > div > div > a > img {
+    border: 2px solid #e60261;
     align-items: flex-end;
-    width: 105%;
-    height: 245px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
   }
 }
@@ -965,10 +957,19 @@ div.banner > div > div > a {
     display: flex;
   }
 
+  div.banner > div > div {
+  overflow: hidden;
+}
+
+  div.banner > div > div > a {
+  overflow: hidden;
+  }
+
   div.banner > div > div > a > img {
+    border: 2px solid #e60261;
     align-items: center;
-    width: 105%;
-    height: 180px;
+    width: 220px;
+    height: 100%;
     object-fit: contain;
   }
 }
@@ -1006,7 +1007,6 @@ div.banner > div > div > span:nth-child(2) > h1 {
   font-size: 6rem;
   color: #e60261;
 }
-
 
 
 /*************************************

@@ -1,11 +1,10 @@
 // Dados das imagens
 const images = [
-    { id: 1, src: '../assets/images/academia-12.png', title: 'Movimento Bem Estar', link: '#' },
-    { id: 2, src: '../assets/images/pod-falar.JPG', title: 'PodFalar', link: '#' },
-    { id: 3, src: '../assets/images/IMG-6444.JPG', title: 'Booster Social', link: '#' },
-    { id: 4, src: '../assets/images/celeiro.JPG', title: 'Celeiro', link: '#' },
-    { id: 5, src: '../assets/images/midia-social-pacote.JPEG', title: 'Lady Hair', link: '#' },
-    { id: 6, src: '../assets/images/IMG-2000.JPEG', title: 'Angels Fusion', link: '#' }
+    { id: 1, src: '../assets/images/Animalia/animalia-9.png', title: 'Animalia', link: '#', destino: 'destino' },
+    { id: 2, src: '../assets/images/bah_burguer/bah_burguer-10.png', title: 'Bah Burguer', link: '#', destino: '' },
+    { id: 3, src: '../assets/images/focus_school/focus_school-4.png', title: 'Focus School', link: '#', destino: '' },
+    { id: 4, src: '../assets/images/Mamma_Mia/mamma_mia-3.png', title: 'Mamma Mia', link: '#', destino: '' },
+    { id: 5, src: '../assets/images/movimento_bem_estar/academia-1.JPG', title: 'Movimento Bem Estar', link: '#', destino: '' }
     // adicione mais objetos de imagem aqui, se necessário
   ];
   
@@ -33,10 +32,26 @@ const verMais = document.createElement('div');
 verMais.textContent = 'Ver mais >>';
 verMais.classList.add('ver-mais'); // Classe personalizada para o texto "Ver mais >>"
 
+ // Criar elemento de link
+ const link = document.createElement('a');
 
-  // Criar elemento de link
-  const link = document.createElement('a');
-  link.href = 'destino.html?id=' + imageData.id; // Link que envia o ID da imagem
+ // Configurar o link de destino com base na propriedade 'destino' da imagem
+ switch (imageData.destino) {
+   case 'destino1':
+     link.href = 'destino1.html?id=' + imageData.id; // Link para o destino1.html
+     break;
+   case 'destino2':
+     link.href = 'destino2.html?id=' + imageData.id; // Link para o destino2.html
+     break;
+   case 'destino3':
+     link.href = 'destino3.html?id=' + imageData.id; // Link para o destino3.html
+     break;
+   // ... adicionar mais casos para outros destinos ...
+   default:
+     link.href = 'destino.html?id=' + imageData.id; // Link padrão se não houver destino definido
+     break;
+ }
+
   link.classList.add('btn'); // Adicionar classe ao link
   link.addEventListener('click', () => {
     // Função para buscar informações do JSON com base no ID da imagem clicada

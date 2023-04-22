@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Caminho da pasta de entrada (diretório do arquivo de script)
-input_folder="$(dirname "$0")"
-
 # Função para exibir o menu de seleção
 display_menu() {
   echo "Selecione o formato de saída:"
@@ -12,6 +9,12 @@ display_menu() {
   echo "4) WebP"
   echo "5) Sair"
 }
+
+# Verifica se o ImageMagick está instalado
+if ! command -v convert > /dev/null 2>&1; then
+  echo "Erro: ImageMagick não está instalado. Instale o ImageMagick para usar este script."
+  exit 1
+fi
 
 # Loop para exibir o menu e processar a seleção do usuário
 while true; do
@@ -43,6 +46,21 @@ while true; do
       ;;
   esac
 done
+
+# Função para obter o caminho de entrada (diretório do arquivo de script)
+get_input_folder() {
+  while true; do
+    read -p "Digite o caminho da pasta de entrada (caminho relativo, caminho absoluto ou pasta onde o script se encontra): " input_folder
+    if [ ! -d "$input_folder" ]; then
+      echo "Pasta de entrada inválida. Tente novamente."
+    else
+      break
+    fi
+  done
+}
+
+# Obtém o caminho da pasta de entrada
+get_input_folder
 
 # Loop através de todos os arquivos na pasta de entrada
 for file in "$input_folder"/*; do
