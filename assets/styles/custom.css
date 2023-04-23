@@ -608,7 +608,7 @@ div.descricao > div {
 }
 
 div.descricao > div > a.btn {
-  border: solid 2px #000;
+  border: solid 2px #151515;
   margin-top: 1.2rem;
   padding: 0.85rem 4rem;
 }
@@ -617,7 +617,7 @@ div.descricao > div > a.btn > span {
   font-weight: 600;
   font-family: "Karla";
 
-  color: #000;
+  color: #151515;
 }
 
 @media (min-width: 1024px) {
@@ -661,7 +661,7 @@ div.descricao > div > a.btn > span {
   }
 
   div.descricao > div > a.btn {
-    border: solid 1px #000;
+    border: solid 1px #151515;
     margin-top: 1.2rem;
     padding: 0.5rem 3rem;
   }
@@ -670,7 +670,7 @@ div.descricao > div > a.btn > span {
     font-weight: 600;
     font-family: "Karla";
 
-    color: #000;
+    color: #151515;
   }
 }
 
@@ -1078,7 +1078,7 @@ div.banner > div > div > span:nth-child(2) > h1 {
     font-size: 1.25rem !important;
     margin: 0 -1.3rem;
     font-family: "Karla";
-    color: #000;
+    color: #151515;
   }
 }
 
@@ -1100,7 +1100,7 @@ div.banner > div > div > span:nth-child(2) > h1 {
     text-align: center;
     font-family: "Karla";
     font-size: 1.8rem !important;
-    color: #000;
+    color: #151515;
     width: 100%;
   }
 }
@@ -1211,15 +1211,14 @@ div.cards-trabalhos > a:hover, div.cards-trabalhos > a:active {
     padding: 1rem 0;
     font-size: 1.4rem !important;
     text-align: start;
-    font-family: 'Lemon Milk';
     text-transform: uppercase;
     font-weight: 600;
   }
-  div.ver-mais {
+  .ver-mais {
     padding: 1rem 0;
+    color: #666;
     font-size: 1rem !important;
     text-align: end;
-    font-family: 'Lemon Milk';
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -1255,7 +1254,7 @@ div.cards-trabalhos > a:hover, div.cards-trabalhos > a:active {
     text-transform: uppercase;
     font-weight: 600;
   }
-  div.ver-mais {
+  .ver-mais {
     padding: 1rem 0;
     font-size: 1.2rem !important;
     text-align: end;
@@ -1299,7 +1298,7 @@ div.cards-trabalhos > a:hover, div.cards-trabalhos > a:active {
     text-transform: uppercase;
     font-weight: 600;
   }
-  div.ver-mais {
+  .ver-mais {
     padding: 1rem 0;
     font-size: 1.2rem !important;
     text-align: end;
