@@ -139,10 +139,11 @@
     a.botao {
       background-color: #e60261 !important;
       border: solid 2px #e60261 !important;
+      padding: 0.7rem 0.8rem !important;
     }
   
     a.botao > span {
-      font-size: 1.8rem;
+      font-size: 1.6rem !important;
       color: #f6f6f6 !important;
     }
     div.pacotes > div.title-pacotes > h2.title-pacotes {
@@ -204,10 +205,11 @@
     a.botao {
       background-color: #e60261 !important;
       border: solid 2px #e60261 !important;
+      padding: 0.7rem 0.8rem !important;
     }
   
     a.botao > span {
-      font-size: 1.6rem;
+      font-size: 1.4rem !important;
       color: #f6f6f6 !important;
     }
   
