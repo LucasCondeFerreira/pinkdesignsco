@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <style>
+        /* Estilo para as avaliações */
+        .review {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .review .stars {
+            display: inline-block;
+        }
+
+        .review .review-text {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Avaliações</h1>
+    <div id="reviews-container">
+        <!-- As avaliações serão exibidas aqui -->
+    </div>
+
+    <script>
+        // Dados de exemplo em formato JSON
+        var reviewsData = [
+            {
+                "avatar": "profile1.jpg",
+                "stars": 4,
+                "text": "Ótimo serviço! Fiquei muito satisfeito com o atendimento."
+            },
+            {
+                "avatar": "profile2.jpg",
+                "stars": 5,
+                "text": "Excelente trabalho! Recomendo a todos, serviço de alta qualidade."
+            },
+            {
+                "avatar": "profile3.jpg",
+                "stars": 3,
+                "text": "Serviço ok, poderia ser melhor. Algumas pequenas falhas."
+            }
+        ];
+
+        var reviewsContainer = document.getElementById("reviews-container");
+
+        // Loop através dos dados de avaliação
+        for (var i = 0; i < reviewsData.length; i++) {
+            var review = reviewsData[i];
+
+            // Criar elementos HTML para a avaliação
+            var reviewElement = document.createElement("div");
+            reviewElement.className = "review";
+
+            var avatarElement = document.createElement("img");
+            avatarElement.src = review.avatar;
+
+            var starsElement = document.createElement("div");
+            starsElement.className = "stars";
+
+            // Adicionar as estrelas como ícones
+            for (var j = 0; j < 5; j++) {
+                var starElement = document.createElement("i");
+                starElement.className = "fas fa-star";
+                // Verificar se a estrela deve ser preenchida ou vazia, de acordo com a quantidade de estrelas na avaliação
+                if (j < review.stars) {
+                    starElement.classList.add("filled");
+                } else {
+                    starElement.classList.add("empty");
+                }
+                starsElement.appendChild(starElement);
+            }
+
+            var reviewTextElement = document.createElement("div");
+            reviewTextElement.className = "review-text";
+            reviewTextElement.textContent = review.text;
+
+            // Adicionar elementos criados à avaliação
+            reviewElement.appendChild(avatarElement);
+            reviewElement.appendChild(starsElement);
+            reviewElement.appendChild(reviewTextElement);
+
+
+            // Adicionar avaliação ao container
+            reviewsContainer.appendChild(reviewElement);
+        }
+    </script>
+           
+</body>
+</html>
