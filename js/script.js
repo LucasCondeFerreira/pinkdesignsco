@@ -35,7 +35,7 @@ const images = [
 		link: '#',
 		destino: '',
 	},
-	{
+/* 	{
 		id: 3,
 		src: '../assets/images/focus_school/focus_school-8.webp',
 		title: 'Focus School',
@@ -55,7 +55,7 @@ const images = [
 		title: 'Movimento Bem Estar',
 		link: '#',
 		destino: '',
-	},
+	}, */
 	// adicione mais objetos de imagem aqui, se necessário
 ];
 
