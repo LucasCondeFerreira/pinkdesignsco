@@ -43,7 +43,6 @@
     <title>Home</title>
   </head>
   <body cz-shortcut-listen="true">
-<div w3-include-html="./surfaces/header.html" class='sticky-top'></div>
 
 <style>
     div.contato > form > div > input {
@@ -85,42 +84,42 @@ div.contato > form > button:hover {
 }
 </style>
 
-<div class="container col-8 mt-5 contato">
-    <form id="form">
-        <div class="mb-3 form-floating">
-            <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="um"   required>
+<div class="col-sm-12 px-2 col-8 mt-5 contato">
+    <form class='col-12' id="form">
+        <div class="mb-3 col-12 form-floating">
+            <input class="form-control" type="text" placeolder="texto" name="textInput"  id="um"   required>
             <label for="um">Qual o nome do seu negócio?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="dois"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="dois"  required>
           <label for="dois">Você possui identidade visual?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="tres"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="tres"  required>
           <label for="tres">Você tem alguma paleta de cores estabelecida?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="quatro"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="quatro"  required>
           <label for="quatro">Quantas páginas o seu PDF terá? (Aproximadamente)</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="cinco"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="cinco"  required>
           <label for="cinco">Você tem algum PDF referência?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="seis"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="seis"  required>
           <label for="seis">Qual será o segmento do curso?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="sete"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="sete"  required>
           <label for="sete">Qual o público alvo?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="oito"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="oito"  required>
           <label for="oito">Você possui website?</label>
       </div>
-      <div class="mb-3 form-floating">
-          <input class="form-control" type="text" class="form-control" placeolder="texto" name="textInput"  id="nove"  required>
+      <div class="mb-3 col-12 form-floating">
+          <input class="form-control" type="text" placeolder="texto" name="textInput"  id="nove"  required>
           <label for="nove">Alguma info adicional, que não tenha sido citada acima?</label>
     </div>
       <button type="submit" class='btn col-12 btn-primary'>Enviar Briefing</button>
@@ -128,7 +127,6 @@ div.contato > form > button:hover {
   </div>
   
 
-<div w3-include-html="./surfaces/slide.html" class="swiper mySwiper"></div>
 <div w3-include-html="./surfaces/footer.html"></div>
 
 <script>
@@ -149,7 +147,7 @@ form.addEventListener('submit', function(event) {
 
   const { um, dois, tres, quatro, cinco, seis, sete, oito, nove } = values;
   const message =
-    `https://api.whatsapp.com/send?phone=5551990186409&text=` +
+    `https://api.whatsapp.com/send?phone=5551982132464&text=` +
     `Aqui está a resposta do briefing referente a produção de um PDF 💜\n\n` +
     `Qual o nome do seu negócio?\n\n${um}\n\n` +
     `Você possui identidade visual?\n\n${dois}\n\n` +
